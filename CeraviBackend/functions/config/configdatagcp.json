@@ -1,0 +1,11 @@
+{
+    "mysql": {
+
+        "socketPath": "/cloudsql/ceraviproject:us-central1:ceravi",
+        "host": "34.70.8.169",
+        "port": "3306",
+        "user": "ceravidev",
+        "pass": "",
+        "database": "ceravidatabase"
+    }
+}
