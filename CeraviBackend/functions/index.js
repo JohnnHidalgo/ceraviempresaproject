@@ -8,6 +8,7 @@ var cors = require('cors')
 apinode.use(express.urlencoded({ extended: false }))
 apinode.use(express.json())
 apinode.use(require('./app/routes/cooperativa.route'))
+apinode.use(require('./app/routes/tipotransporte.route'))
 
 apinode.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
