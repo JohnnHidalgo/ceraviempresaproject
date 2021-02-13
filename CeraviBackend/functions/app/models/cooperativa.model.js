@@ -24,7 +24,7 @@ var cooperativaModels = {
     },
     addCooperativa: (data, callback) => {
         if (connection) {
-            let sql = `insert into cooperativa(nombre,tx_user,tx_date, active) values (${connection.escape(data.nombre)}, ${connection.escape(data.tx_user)}, ${connection.escape(data.tx_host)}, ${connection.escape(data.active)})`
+            let sql = `insert into cooperativa(nombre,tx_user,tx_date, active) values (${connection.escape(data.nombre)}, ${connection.escape(data.tx_user)}, ${connection.escape(data.tx_date)}, ${connection.escape(data.active)})`
             connection.query(sql, (error, rows) => {
                 if (error) throw error
                 callback({ message: 'cooperativa insertado' })

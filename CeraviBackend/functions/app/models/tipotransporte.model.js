@@ -24,7 +24,7 @@ var tipotransporteModels = {
     },
     addTipotransporte: (data, callback) => {
         if (connection) {
-            let sql = `insert into tipotransporte(tipo,tx_user,tx_date, active) values (${connection.escape(data.tipo)}, ${connection.escape(data.tx_user)}, ${connection.escape(data.tx_host)}, ${connection.escape(data.active)})`
+            let sql = `insert into tipotransporte(tipo,tx_user,tx_date, active) values (${connection.escape(data.tipo)}, ${connection.escape(data.tx_user)}, ${connection.escape(data.tx_date)}, ${connection.escape(data.active)})`
             connection.query(sql, (error, rows) => {
                 if (error) throw error
                 callback({ message: 'tipotransporte insertado' })
