@@ -13,7 +13,7 @@ var transporteModels = {
         }
     },
     getOneTransporte: (data, callback) => {
-        console.log(`idcooperativa : ${data}`)
+        console.log(`idtransporte : ${data}`)
         if (connection) {
             let sql = `select * from transporte where idtransporte = ${connection.escape(data.idtransporte)}`
             connection.query(sql, (error, rows) => {
@@ -31,9 +31,21 @@ var transporteModels = {
             })
         }
     },
+
+    editProduct: (data, callback) => {
+        if (connection) {
+            let sql = `update producto set productname = ${connection.escape(data.productname)},description = ${connection.escape(data.description)}, price = ${connection.escape(data.price)},quantity = ${connection.escape(data.quantity)} where idproducto = ${connection.escape(data.idproducto)}`
+            console.log(sql);
+            connection.query(sql, (error, rows) => {
+                if (error) throw error
+                callback({ message: 'document actualizado' })
+            })
+        }
+    },
+
     editTransporte: (data, callback) => {
         if (connection) {
-            let sql = `update transporte set nombre = ${connection.escape(data.nombre)} where idtransporte = ${connection.escape(data.idtransporte)}`
+            let sql = `update transporte set placa = ${connection.escape(data.placa)}, conductor = ${connection.escape(data.conductor)}, dueño = ${connection.escape(data.dueño)}, idcooperativa = ${connection.escape(data.idcooperativa)}, idtipotransporte = ${connection.escape(data.idtipotransporte)} where idtransporte = ${connection.escape(data.idtransporte)}`
             console.log(sql);
             connection.query(sql, (error, rows) => {
                 if (error) throw error
