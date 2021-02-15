@@ -10,6 +10,8 @@ apinode.use(express.json())
 apinode.use(require('./app/routes/cooperativa.route'))
 apinode.use(require('./app/routes/tipotransporte.route'))
 apinode.use(require('./app/routes/transporte.route'))
+apinode.use(require('./app/routes/arcilla.route'))
+apinode.use(require('./app/routes/trabajador.route'))
 
 apinode.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
@@ -21,4 +23,4 @@ apinode.use(function(req, res, next) {
 });
 
 
-exports.sistemaparroquiabackend = functions.https.onRequest(apinode);
+exports.ceravibackendservice = functions.https.onRequest(apinode);
