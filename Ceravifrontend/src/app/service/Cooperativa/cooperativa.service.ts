@@ -19,7 +19,7 @@ export class CooperativaService {
     return this.http.get<any>(this.mainUrl+idcooperativa);
   }
 
-  createDocument(cooperativa:any){
+  createCooperativa(cooperativa:any){
     return this.http.post<any>(this.mainUrl,cooperativa);
   }
   
