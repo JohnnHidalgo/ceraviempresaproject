@@ -14,11 +14,11 @@ apptset.use(function(req, res, next) {
     next();
 });
 
-const { getCargues, getOneCargue, addCargue, editCargue, deleteCargue } = require('../controllers/cargue.controller')
-apptset.get('/cargue/', getCargues);
-apptset.get('/cargue/:idcargue', getOneCargue);
-apptset.post('/cargue/', addCargue);
-apptset.put('/cargue/:idcargue', editCargue);
-apptset.put('/cargue/delete/:idcargue', deleteCargue);
+const { getDescargues, getOneDescargue, addDescargue, editDescargue, deleteDescargue } = require('../controllers/descargue.controller')
+apptset.get('/descargue/', getDescargues);
+apptset.get('/descargue/:iddescargue', getOneDescargue);
+apptset.post('/descargue/', addDescargue);
+apptset.put('/descargue/:iddescargue', editDescargue);
+apptset.put('/descargue/delete/:iddescargue', deleteDescargue);
 
 module.exports = apptset
