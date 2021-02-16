@@ -19,6 +19,7 @@ apinode.use(require('./app/routes/ladrillo.route'))
 apinode.use(require('./app/routes/horno.route'))
 apinode.use(require('./app/routes/cantidadubicacion.route'))
 apinode.use(require('./app/routes/ubicacion.route'))
+apinode.use(require('./app/routes/ubicacioncantidadubicacion.route'))
 
 apinode.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
