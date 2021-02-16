@@ -24,6 +24,7 @@ apinode.use(require('./app/routes/cliente.route'))
 apinode.use(require('./app/routes/recepcionarcilla.route'))
 apinode.use(require('./app/routes/moldeado.route'))
 apinode.use(require('./app/routes/cargue.route'))
+apinode.use(require('./app/routes/quema.route'))
 
 apinode.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
