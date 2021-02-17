@@ -1,1 +1,18 @@
-<p>addtipotransporte works!</p>
+<div class="container col-md-10">
+    <div class="card">
+        <div class="card-header">
+            <h3>Agregar Tipo Transporte</h3>
+        </div>
+        <div class="card-body">
+            <form action="">
+
+                <div class="form-group">
+                    <label for="">Tipo:</label>
+                    <input [(ngModel)]="tipotransporte.tipo" name="nombre" type="text" class="form-control">
+                </div>
+
+                <button (click)="createCooperativa()" class="btn btn-danger">Agregar</button>
+            </form>
+        </div>
+    </div>
+</div>
