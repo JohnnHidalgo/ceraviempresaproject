@@ -1,1 +1,30 @@
-<p>listcooperativa works!</p>
+<div class="container col-md-10">
+    <div class="card">
+        <div class="card-header">
+            <h3>Documentos
+                <button (click)="goAddCooperativa()" class="btn btn-info">Agregar Nuevo</button>
+            </h3>
+        </div>
+        <div class="card-body" style=" height:450px; overflow:auto;">
+            <table class="table table-hover" cellspacing="0" cellpadding="1">
+                <thead>
+                    <tr class="text-center">
+                        <th>ID</th>
+                        <th>COOPERATIVA</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <td></td>
+                    <tr *ngFor="let cooperativa of cooperativas" class="text-center">
+                        <td>{{cooperativa.idcooperativa}}</td>
+                        <td>{{cooperativa.nombre}}</td>
+                        <td>
+                            <button class="btn btn-secondary"><mat-icon>edit</mat-icon></button>
+                            <button class="btn btn-danger"><mat-icon>delete</mat-icon></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
