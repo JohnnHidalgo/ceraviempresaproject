@@ -16,16 +16,16 @@ function getOneTransporte(req, res) {
 }
 
 function addTransporte(req, res) {
-    const { placa, conductor, dueño, idcooperativa, idtipotransporte, tx_user, tx_date, active } = req.body
-    transporteModels.addTransporte({ placa, conductor, dueño, idcooperativa, idtipotransporte, tx_user, tx_date, active }, (data, error) => {
+    const { placa, conductor, dueno, idcooperativa, idtipotransporte, tx_user, tx_date, active } = req.body
+    transporteModels.addTransporte({ placa, conductor, dueno, idcooperativa, idtipotransporte, tx_user, tx_date, active }, (data, error) => {
         res.json(data)
     })
 }
 
 function editTransporte(req, res) {
     const { idtransporte } = req.params
-    const { placa, conductor, dueño, idcooperativa, idtipotransporte } = req.body
-    transporteModels.editTransporte({ idtransporte, placa, conductor, dueño, idcooperativa, idtipotransporte }, (data, error) => {
+    const { placa, conductor, dueno, idcooperativa, idtipotransporte } = req.body
+    transporteModels.editTransporte({ idtransporte, placa, conductor, dueno, idcooperativa, idtipotransporte }, (data, error) => {
         res.json(data)
     })
 }

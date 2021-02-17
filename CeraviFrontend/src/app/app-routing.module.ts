@@ -6,6 +6,9 @@ import { ListcooperativaComponent } from './view/cooperativa/listcooperativa/lis
 import { AddtipotransporteComponent } from './view/tipotransporte/addtipotransporte/addtipotransporte.component';
 import { EdittipotransporteComponent } from './view/tipotransporte/edittipotransporte/edittipotransporte.component';
 import { ListtipotransporteComponent } from './view/tipotransporte/listtipotransporte/listtipotransporte.component';
+import { AddtransporteComponent } from './view/transporte/addtransporte/addtransporte.component';
+import { EdittransporteComponent } from './view/transporte/edittransporte/edittransporte.component';
+import { ListtransporteComponent } from './view/transporte/listtransporte/listtransporte.component';
 
 const routes: Routes = [
   {path:'addcooperativa',component:AddcooperativaComponent},
@@ -14,7 +17,11 @@ const routes: Routes = [
 
   {path:'addtipotransporte',component:AddtipotransporteComponent},
   {path:'edittipotransporte',component:EdittipotransporteComponent},
-  {path:'listtipotransporte',component:ListcooperativaComponent}
+  {path:'listtipotransporte',component:ListcooperativaComponent},
+
+  {path:'addtransporte',component:AddtransporteComponent},
+  {path:'edittransporte',component:EdittransporteComponent},
+  {path:'listtransporte',component:ListtransporteComponent}
 
 
 
