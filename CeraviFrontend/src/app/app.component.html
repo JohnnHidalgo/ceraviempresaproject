@@ -1,86 +1,86 @@
 <mat-toolbar mode="over">
 
-  <mat-toolbar-row>
+    <mat-toolbar-row>
 
-      <button class="buttonopacity" mat-button (click)="sidenav.toggle()">
-          <mat-icon class="buttonopacityicon">menu</mat-icon>
-      </button>
-      <span class="large-spacer"></span>
-      <mat-icon>face</mat-icon>
+        <button class="buttonopacity" mat-button (click)="sidenav.toggle()">
+            <mat-icon class="buttonopacityicon">menu</mat-icon>
+        </button>
+        <span class="large-spacer"></span>
+        <mat-icon>face</mat-icon>
 
-  </mat-toolbar-row>
+    </mat-toolbar-row>
 </mat-toolbar>
 
 
 <mat-sidenav-container autpsize>
 
-  <mat-sidenav class="side-nav" #sidenav [opened]="screenWidth>840" [mode]="(screenWidth>840)?'side':'over'" position="start">
-      <div class="container">
-          <span>Menú</span>
-      </div>
-      <hr>
+    <mat-sidenav class="side-nav" #sidenav [opened]="screenWidth>840" [mode]="(screenWidth>840)?'side':'over'" position="start">
+        <div class="container">
+            <span>Menú</span>
+        </div>
+        <hr>
 
-      <div class="side-nave-link">
-          <mat-nav-list class="mat-list">
-              <mat-list-item [routerLink]="['home']" class="mat-item-hover">
-                  <mat-icon class="icon-padding">home</mat-icon>
-                  <p class="text-padding">Inicio</p>
-              </mat-list-item>
+        <div class="side-nave-link">
+            <mat-nav-list class="mat-list">
+                <mat-list-item [routerLink]="['home']" class="mat-item-hover">
+                    <mat-icon class="icon-padding">home</mat-icon>
+                    <p class="text-padding">Inicio</p>
+                </mat-list-item>
 
-              <mat-list-item [routerLink]="['personadd']" class="mat-item-hover">
-                  <mat-icon class="icon-padding">person_add</mat-icon>
-                  <p class="text-padding">Registro</p>
-              </mat-list-item>
+                <mat-list-item [routerLink]="['personadd']" class="mat-item-hover">
+                    <mat-icon class="icon-padding">person_add</mat-icon>
+                    <p class="text-padding">Registro</p>
+                </mat-list-item>
 
-              <mat-list-item [routerLink]="['personlist']" class="mat-item-hover">
-                  <mat-icon class="icon-padding">groups</mat-icon>
-                  <p class="text-padding">Catecumenos</p>
-              </mat-list-item>
+                <mat-list-item [routerLink]="['personlist']" class="mat-item-hover">
+                    <mat-icon class="icon-padding">groups</mat-icon>
+                    <p class="text-padding">Catecumenos</p>
+                </mat-list-item>
 
-              <mat-list-item [routerLink]="['catequistalist']" class="mat-item-hover">
-                  <mat-icon class="icon-padding">groups</mat-icon>
-                  <p class="text-padding">Catequistas</p>
-              </mat-list-item>
+                <mat-list-item [routerLink]="['catequistalist']" class="mat-item-hover">
+                    <mat-icon class="icon-padding">groups</mat-icon>
+                    <p class="text-padding">Catequistas</p>
+                </mat-list-item>
 
-              <mat-list-item [routerLink]="['salelist']" class="mat-item-hover">
-                  <mat-icon class="icon-padding">shoping_car</mat-icon>
-                  <p class="text-padding">Ventas</p>
-              </mat-list-item>
+                <mat-list-item [routerLink]="['salelist']" class="mat-item-hover">
+                    <mat-icon class="icon-padding">shoping_car</mat-icon>
+                    <p class="text-padding">Ventas</p>
+                </mat-list-item>
 
-              <mat-list-item [routerLink]="['productlist']" class="mat-item-hover">
-                  <mat-icon class="icon-padding">card_giftcard</mat-icon>
-                  <p class="text-padding">Productos</p>
-              </mat-list-item>
+                <mat-list-item [routerLink]="['productlist']" class="mat-item-hover">
+                    <mat-icon class="icon-padding">card_giftcard</mat-icon>
+                    <p class="text-padding">Productos</p>
+                </mat-list-item>
 
-              <mat-list-item [routerLink]="['documentlist']" class="mat-item-hover">
-                  <mat-icon class="icon-padding">article</mat-icon>
-                  <p class="text-padding">Documentos</p>
-              </mat-list-item>
+                <mat-list-item [routerLink]="['documentlist']" class="mat-item-hover">
+                    <mat-icon class="icon-padding">article</mat-icon>
+                    <p class="text-padding">Documentos</p>
+                </mat-list-item>
 
-              <mat-list-item [routerLink]="['materiallist']" class="mat-item-hover">
-                  <mat-icon class="icon-padding">folder</mat-icon>
-                  <p class="text-padding">Materiales</p>
-              </mat-list-item>
+                <mat-list-item [routerLink]="['materiallist']" class="mat-item-hover">
+                    <mat-icon class="icon-padding">folder</mat-icon>
+                    <p class="text-padding">Materiales</p>
+                </mat-list-item>
 
-              <mat-list-item [routerLink]="['catequesislist']" class="mat-item-hover">
-                  <mat-icon class="icon-padding">reduce_capacity</mat-icon>
-                  <p class="text-padding">Catequesis</p>
-              </mat-list-item>
-          </mat-nav-list>
-
-
-          <mat-nav-list  class="mat-list">
-              <mat-list-item>
-                  <mat-icon class="icon-padding">dashboard</mat-icon>
-
-                  <p class="text-padding">SingOut</p>
-              </mat-list-item>
-          </mat-nav-list>
-      </div>
-  </mat-sidenav>
+                <mat-list-item [routerLink]="['catequesislist']" class="mat-item-hover">
+                    <mat-icon class="icon-padding">reduce_capacity</mat-icon>
+                    <p class="text-padding">Catequesis</p>
+                </mat-list-item>
+            </mat-nav-list>
 
 
-  <mat-sidenav-content>
-      <router-outlet></router-outlet>
-  </mat-sidenav-content>
+            <mat-nav-list class="mat-list">
+                <mat-list-item>
+                    <mat-icon class="icon-padding">dashboard</mat-icon>
+
+                    <p class="text-padding">SingOut</p>
+                </mat-list-item>
+            </mat-nav-list>
+        </div>
+    </mat-sidenav>
+
+
+    <mat-sidenav-content>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
 </mat-sidenav-container>
