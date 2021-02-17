@@ -14,8 +14,9 @@ apptset.use(function(req, res, next) {
     next();
 });
 
-const { getTransporte, getOneTransporte, addTransporte, editTransporte, deleteTransporte } = require('../controllers/transporte.controller')
+const { getTransporte, getTransporteAllData, getOneTransporte, addTransporte, editTransporte, deleteTransporte } = require('../controllers/transporte.controller')
 apptset.get('/transporte/', getTransporte);
+apptset.get('/transporte/all', getTransporteAllData);
 apptset.get('/transporte/:idtransporte', getOneTransporte);
 apptset.post('/transporte/', addTransporte);
 apptset.put('/transporte/:idtransporte', editTransporte);

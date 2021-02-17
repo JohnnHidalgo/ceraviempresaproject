@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Transporte } from 'src/app/model/transporte';
+import { Transporte, TransporteAllData } from 'src/app/model/transporte';
 
 @Injectable({
   providedIn: 'root'
@@ -13,6 +13,10 @@ export class TransporteService {
   
   getAllTransporte(){  
     return this.http.get<Transporte[]>(this.mainUrl);
+  }
+
+  getAllTransporteAllData(){  
+    return this.http.get<TransporteAllData[]>(this.mainUrl+"all");
   }
   
   getOneTransporte(idtransporte:number){  

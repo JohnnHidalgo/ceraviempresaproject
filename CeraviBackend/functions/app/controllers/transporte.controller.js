@@ -8,6 +8,12 @@ function getTransporte(req, res, next) {
     })
 }
 
+function getTransporteAllData(req, res, next) {
+    transporteModels.getTransporteAllData((data, error) => {
+        res.json(data)
+    })
+}
+
 function getOneTransporte(req, res) {
     const { idtransporte } = req.params
     transporteModels.getOneTransporte({ idtransporte }, (data, error) => {
@@ -39,6 +45,7 @@ function deleteTransporte(req, res) {
 
 module.exports = {
     getTransporte,
+    getTransporteAllData,
     getOneTransporte,
     addTransporte,
     editTransporte,

@@ -1,1 +1,38 @@
-<p>listtransporte works!</p>
+<div class="container col-md-10">
+    <div class="card">
+        <div class="card-header">
+            <h3>Transporte
+                <button (click)="goAddTransporte()" class="btn btn-info">Agregar Nuevo</button>
+            </h3>
+        </div>
+        <div class="card-body" style=" height:450px; overflow:auto;">
+            <table class="table table-hover" cellspacing="0" cellpadding="1">
+                <thead>
+                    <tr class="text-center">
+                        <th>ID</th>
+                        <th>PLACA</th>
+                        <th>CONDUCTOR</th>
+                        <th>DUEÑO</th>
+                        <th>COOPERATIVA</th>
+                        <th>TIPO</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <td></td>
+                    <tr *ngFor="let transporte of transportes" class="text-center">
+                        <td>{{transporte.idtransporte}}</td>
+                        <td>{{transporte.placa}}</td>
+                        <td>{{transporte.conductor}}</td>
+                        <td>{{transporte.dueno}}</td>
+                        <td>{{transporte.nombre}}</td>
+                        <td>{{transporte.tipo}}</td>
+                        <td>
+                            <button class="btn btn-secondary"><mat-icon>edit</mat-icon></button>
+                            <button class="btn btn-danger"><mat-icon>delete</mat-icon></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

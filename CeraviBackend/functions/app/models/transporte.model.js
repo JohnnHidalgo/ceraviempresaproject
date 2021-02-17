@@ -12,6 +12,15 @@ var transporteModels = {
             })
         }
     },
+    getTransporteAllData: (callback) => {
+        if (connection) {
+            let sql = `select a.placa,a.conductor,a.dueno,b.nombre,c.tipo from transporte a, cooperativa b, tipotransporte c where a.active = true`
+            connection.query(sql, (error, rows) => {
+                if (error) throw error
+                callback(rows)
+            })
+        }
+    },
     getOneTransporte: (data, callback) => {
         console.log(`idtransporte : ${data}`)
         if (connection) {
