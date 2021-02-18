@@ -38,6 +38,9 @@ import { EditclienteComponent } from './view/cliente/editcliente/editcliente.com
 import { AddubicacionComponent } from './view/ubicacion/addubicacion/addubicacion.component';
 import { ListubicacionComponent } from './view/ubicacion/listubicacion/listubicacion.component';
 import { EditubicacionComponent } from './view/ubicacion/editubicacion/editubicacion.component';
+import { AddtrabajadorComponent } from './view/trabajador/addtrabajador/addtrabajador.component';
+import { EdittrabajadorComponent } from './view/trabajador/edittrabajador/edittrabajador.component';
+import { ListtrabajadorComponent } from './view/trabajador/listtrabajador/listtrabajador.component';
 
 @NgModule({
   declarations: [
@@ -65,7 +68,10 @@ import { EditubicacionComponent } from './view/ubicacion/editubicacion/editubica
     EditclienteComponent,
     AddubicacionComponent,
     ListubicacionComponent,
-    EditubicacionComponent
+    EditubicacionComponent,
+    AddtrabajadorComponent,
+    EdittrabajadorComponent,
+    ListtrabajadorComponent
   ],
   imports: [
     BrowserModule,

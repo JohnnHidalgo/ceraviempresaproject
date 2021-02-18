@@ -18,6 +18,9 @@ import { ListladrilloComponent } from './view/ladrillo/listladrillo/listladrillo
 import { AddtipotransporteComponent } from './view/tipotransporte/addtipotransporte/addtipotransporte.component';
 import { EdittipotransporteComponent } from './view/tipotransporte/edittipotransporte/edittipotransporte.component';
 import { ListtipotransporteComponent } from './view/tipotransporte/listtipotransporte/listtipotransporte.component';
+import { AddtrabajadorComponent } from './view/trabajador/addtrabajador/addtrabajador.component';
+import { EdittrabajadorComponent } from './view/trabajador/edittrabajador/edittrabajador.component';
+import { ListtrabajadorComponent } from './view/trabajador/listtrabajador/listtrabajador.component';
 import { AddtransporteComponent } from './view/transporte/addtransporte/addtransporte.component';
 import { EdittransporteComponent } from './view/transporte/edittransporte/edittransporte.component';
 import { ListtransporteComponent } from './view/transporte/listtransporte/listtransporte.component';
@@ -49,7 +52,10 @@ const routes: Routes = [
   {path:'listcliente',component:ListclienteComponent},
   {path:'addubicacion',component:AddubicacionComponent},
   {path:'editubicacion',component:EditubicacionComponent},
-  {path:'listubicacion',component:ListubicacionComponent}
+  {path:'listubicacion',component:ListubicacionComponent},
+  {path:'addtrabajador',component:AddtrabajadorComponent},
+  {path:'edittrabajador',component:EdittrabajadorComponent},
+  {path:'listtrabajador',component:ListtrabajadorComponent}
 
 
 ];
