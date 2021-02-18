@@ -35,6 +35,9 @@ import { EditarcillaComponent } from './view/arcilla/editarcilla/editarcilla.com
 import { AddclienteComponent } from './view/cliente/addcliente/addcliente.component';
 import { ListclienteComponent } from './view/cliente/listcliente/listcliente.component';
 import { EditclienteComponent } from './view/cliente/editcliente/editcliente.component';
+import { AddubicacionComponent } from './view/ubicacion/addubicacion/addubicacion.component';
+import { ListubicacionComponent } from './view/ubicacion/listubicacion/listubicacion.component';
+import { EditubicacionComponent } from './view/ubicacion/editubicacion/editubicacion.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +62,10 @@ import { EditclienteComponent } from './view/cliente/editcliente/editcliente.com
     EditarcillaComponent,
     AddclienteComponent,
     ListclienteComponent,
-    EditclienteComponent
+    EditclienteComponent,
+    AddubicacionComponent,
+    ListubicacionComponent,
+    EditubicacionComponent
   ],
   imports: [
     BrowserModule,

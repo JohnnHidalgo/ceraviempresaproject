@@ -21,6 +21,9 @@ import { ListtipotransporteComponent } from './view/tipotransporte/listtipotrans
 import { AddtransporteComponent } from './view/transporte/addtransporte/addtransporte.component';
 import { EdittransporteComponent } from './view/transporte/edittransporte/edittransporte.component';
 import { ListtransporteComponent } from './view/transporte/listtransporte/listtransporte.component';
+import { AddubicacionComponent } from './view/ubicacion/addubicacion/addubicacion.component';
+import { EditubicacionComponent } from './view/ubicacion/editubicacion/editubicacion.component';
+import { ListubicacionComponent } from './view/ubicacion/listubicacion/listubicacion.component';
 
 const routes: Routes = [
   {path:'addcooperativa',component:AddcooperativaComponent},
@@ -43,7 +46,10 @@ const routes: Routes = [
   {path:'listarcilla',component:ListarcillaComponent},
   {path:'addcliente',component:AddclienteComponent},
   {path:'editcliente',component:EditclienteComponent},
-  {path:'listcliente',component:ListclienteComponent}
+  {path:'listcliente',component:ListclienteComponent},
+  {path:'addubicacion',component:AddubicacionComponent},
+  {path:'editubicacion',component:EditubicacionComponent},
+  {path:'listubicacion',component:ListubicacionComponent}
 
 
 ];
