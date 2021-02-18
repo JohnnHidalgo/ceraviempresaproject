@@ -23,6 +23,9 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import { AddladrilloComponent } from './view/ladrillo/addladrillo/addladrillo.component';
+import { ListladrilloComponent } from './view/ladrillo/listladrillo/listladrillo.component';
+import { EditladrilloComponent } from './view/ladrillo/editladrillo/editladrillo.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +38,10 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     EdittipotransporteComponent,
     EdittransporteComponent,
     AddtransporteComponent,
-    ListtransporteComponent
+    ListtransporteComponent,
+    AddladrilloComponent,
+    ListladrilloComponent,
+    EditladrilloComponent
   ],
   imports: [
     BrowserModule,

@@ -3,6 +3,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { AddcooperativaComponent } from './view/cooperativa/addcooperativa/addcooperativa.component';
 import { EditcooperativaComponent } from './view/cooperativa/editcooperativa/editcooperativa.component';
 import { ListcooperativaComponent } from './view/cooperativa/listcooperativa/listcooperativa.component';
+import { AddladrilloComponent } from './view/ladrillo/addladrillo/addladrillo.component';
+import { EditladrilloComponent } from './view/ladrillo/editladrillo/editladrillo.component';
+import { ListladrilloComponent } from './view/ladrillo/listladrillo/listladrillo.component';
 import { AddtipotransporteComponent } from './view/tipotransporte/addtipotransporte/addtipotransporte.component';
 import { EdittipotransporteComponent } from './view/tipotransporte/edittipotransporte/edittipotransporte.component';
 import { ListtipotransporteComponent } from './view/tipotransporte/listtipotransporte/listtipotransporte.component';
@@ -14,15 +17,15 @@ const routes: Routes = [
   {path:'addcooperativa',component:AddcooperativaComponent},
   {path:'editcooperativa',component:EditcooperativaComponent},
   {path:'listcooperativa',component:ListcooperativaComponent},
-
   {path:'addtipotransporte',component:AddtipotransporteComponent},
   {path:'edittipotransporte',component:EdittipotransporteComponent},
   {path:'listtipotransporte',component:ListcooperativaComponent},
-
   {path:'addtransporte',component:AddtransporteComponent},
   {path:'edittransporte',component:EdittransporteComponent},
-  {path:'listtransporte',component:ListtransporteComponent}
-
+  {path:'listtransporte',component:ListtransporteComponent},
+  {path:'addladrillo',component:AddladrilloComponent},
+  {path:'editladrillo',component:EditladrilloComponent},
+  {path:'listladrillo',component:ListladrilloComponent}
 
 
 ];
