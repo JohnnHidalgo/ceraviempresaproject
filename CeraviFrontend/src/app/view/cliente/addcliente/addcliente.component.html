@@ -1,0 +1,38 @@
+<div class="container col-md-10">
+    <div class="card">
+        <div class="card-header">
+            <h3>Agregar Cliente</h3>
+        </div>
+        <div class="card-body">
+            <form action="">
+
+                <div class="form-group">
+                    <label for="">Nombre:</label>
+                    <input [(ngModel)]="cliente.nombre" name="nombre" type="text" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="">Departamento:</label>
+                    <input [(ngModel)]="cliente.departamento" name="departamento" type="text" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="">Ubicacion:</label>
+                    <input [(ngModel)]="cliente.ubicacion" name="ubicacion" type="text" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="">Celular:</label>
+                    <input [(ngModel)]="cliente.celular" name="celular" type="text" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="">Nit:</label>
+                    <input [(ngModel)]="cliente.nit" name="nit" type="text" class="form-control">
+                </div>
+
+                <button (click)="createCliente()" class="btn btn-danger">Agregar</button>
+            </form>
+        </div>
+    </div>
+</div>

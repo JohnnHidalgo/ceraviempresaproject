@@ -32,6 +32,9 @@ import { EdithornoComponent } from './view/horno/edithorno/edithorno.component';
 import { AddarcillaComponent } from './view/arcilla/addarcilla/addarcilla.component';
 import { ListarcillaComponent } from './view/arcilla/listarcilla/listarcilla.component';
 import { EditarcillaComponent } from './view/arcilla/editarcilla/editarcilla.component';
+import { AddclienteComponent } from './view/cliente/addcliente/addcliente.component';
+import { ListclienteComponent } from './view/cliente/listcliente/listcliente.component';
+import { EditclienteComponent } from './view/cliente/editcliente/editcliente.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +56,10 @@ import { EditarcillaComponent } from './view/arcilla/editarcilla/editarcilla.com
     EdithornoComponent,
     AddarcillaComponent,
     ListarcillaComponent,
-    EditarcillaComponent
+    EditarcillaComponent,
+    AddclienteComponent,
+    ListclienteComponent,
+    EditclienteComponent
   ],
   imports: [
     BrowserModule,
