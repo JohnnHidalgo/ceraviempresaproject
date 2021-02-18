@@ -26,6 +26,9 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import { AddladrilloComponent } from './view/ladrillo/addladrillo/addladrillo.component';
 import { ListladrilloComponent } from './view/ladrillo/listladrillo/listladrillo.component';
 import { EditladrilloComponent } from './view/ladrillo/editladrillo/editladrillo.component';
+import { AddhornoComponent } from './view/horno/addhorno/addhorno.component';
+import { ListhornoComponent } from './view/horno/listhorno/listhorno.component';
+import { EdithornoComponent } from './view/horno/edithorno/edithorno.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +44,10 @@ import { EditladrilloComponent } from './view/ladrillo/editladrillo/editladrillo
     ListtransporteComponent,
     AddladrilloComponent,
     ListladrilloComponent,
-    EditladrilloComponent
+    EditladrilloComponent,
+    AddhornoComponent,
+    ListhornoComponent,
+    EdithornoComponent
   ],
   imports: [
     BrowserModule,

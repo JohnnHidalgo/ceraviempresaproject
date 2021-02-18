@@ -3,6 +3,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { AddcooperativaComponent } from './view/cooperativa/addcooperativa/addcooperativa.component';
 import { EditcooperativaComponent } from './view/cooperativa/editcooperativa/editcooperativa.component';
 import { ListcooperativaComponent } from './view/cooperativa/listcooperativa/listcooperativa.component';
+import { AddhornoComponent } from './view/horno/addhorno/addhorno.component';
+import { EdithornoComponent } from './view/horno/edithorno/edithorno.component';
+import { ListhornoComponent } from './view/horno/listhorno/listhorno.component';
 import { AddladrilloComponent } from './view/ladrillo/addladrillo/addladrillo.component';
 import { EditladrilloComponent } from './view/ladrillo/editladrillo/editladrillo.component';
 import { ListladrilloComponent } from './view/ladrillo/listladrillo/listladrillo.component';
@@ -25,7 +28,10 @@ const routes: Routes = [
   {path:'listtransporte',component:ListtransporteComponent},
   {path:'addladrillo',component:AddladrilloComponent},
   {path:'editladrillo',component:EditladrilloComponent},
-  {path:'listladrillo',component:ListladrilloComponent}
+  {path:'listladrillo',component:ListladrilloComponent},
+  {path:'addhorno',component:AddhornoComponent},
+  {path:'edithorno',component:EdithornoComponent},
+  {path:'listhorno',component:ListhornoComponent}
 
 
 ];
