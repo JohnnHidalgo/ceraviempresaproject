@@ -40,6 +40,7 @@ function deleteArcilla(req, res) {
 module.exports = {
     getArcillas,
     getOneArcilla,
+    addArcilla,
     editArcilla,
     deleteArcilla
 }

@@ -14,10 +14,10 @@ apptset.use(function(req, res, next) {
     next();
 });
 
-const { getArcillas, getOneArcilla, editArcilla, deleteArcilla } = require('../controllers/arcilla.controller')
+const { getArcillas, getOneArcilla, addArcilla, editArcilla, deleteArcilla } = require('../controllers/arcilla.controller')
 apptset.get('/arcilla/', getArcillas);
 apptset.get('/arcilla/:idarcilla', getOneArcilla);
-apptset.post('/arcilla/', editArcilla);
+apptset.post('/arcilla/', addArcilla);
 apptset.put('/arcilla/:idarcilla', editArcilla);
 apptset.put('/arcilla/delete/:idarcilla', deleteArcilla);
 
