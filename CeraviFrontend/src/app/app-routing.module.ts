@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AddarcillaComponent } from './view/arcilla/addarcilla/addarcilla.component';
+import { EditarcillaComponent } from './view/arcilla/editarcilla/editarcilla.component';
+import { ListarcillaComponent } from './view/arcilla/listarcilla/listarcilla.component';
 import { AddcooperativaComponent } from './view/cooperativa/addcooperativa/addcooperativa.component';
 import { EditcooperativaComponent } from './view/cooperativa/editcooperativa/editcooperativa.component';
 import { ListcooperativaComponent } from './view/cooperativa/listcooperativa/listcooperativa.component';
@@ -31,7 +34,10 @@ const routes: Routes = [
   {path:'listladrillo',component:ListladrilloComponent},
   {path:'addhorno',component:AddhornoComponent},
   {path:'edithorno',component:EdithornoComponent},
-  {path:'listhorno',component:ListhornoComponent}
+  {path:'listhorno',component:ListhornoComponent},
+  {path:'addarcilla',component:AddarcillaComponent},
+  {path:'editarcilla',component:EditarcillaComponent},
+  {path:'listarcilla',component:ListarcillaComponent}
 
 
 ];

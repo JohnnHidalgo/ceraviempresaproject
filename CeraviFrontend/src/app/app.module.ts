@@ -29,6 +29,9 @@ import { EditladrilloComponent } from './view/ladrillo/editladrillo/editladrillo
 import { AddhornoComponent } from './view/horno/addhorno/addhorno.component';
 import { ListhornoComponent } from './view/horno/listhorno/listhorno.component';
 import { EdithornoComponent } from './view/horno/edithorno/edithorno.component';
+import { AddarcillaComponent } from './view/arcilla/addarcilla/addarcilla.component';
+import { ListarcillaComponent } from './view/arcilla/listarcilla/listarcilla.component';
+import { EditarcillaComponent } from './view/arcilla/editarcilla/editarcilla.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +50,10 @@ import { EdithornoComponent } from './view/horno/edithorno/edithorno.component';
     EditladrilloComponent,
     AddhornoComponent,
     ListhornoComponent,
-    EdithornoComponent
+    EdithornoComponent,
+    AddarcillaComponent,
+    ListarcillaComponent,
+    EditarcillaComponent
   ],
   imports: [
     BrowserModule,
