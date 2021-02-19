@@ -42,6 +42,9 @@ import { AddtrabajadorComponent } from './view/trabajador/addtrabajador/addtraba
 import { EdittrabajadorComponent } from './view/trabajador/edittrabajador/edittrabajador.component';
 import { ListtrabajadorComponent } from './view/trabajador/listtrabajador/listtrabajador.component';
 import { HomeComponent } from './view/home/home.component';
+import { AddareatrabajoComponent } from './view/areatrabajo/addareatrabajo/addareatrabajo.component';
+import { EditareatrabajoComponent } from './view/areatrabajo/editareatrabajo/editareatrabajo.component';
+import { ListareatrabajoComponent } from './view/areatrabajo/listareatrabajo/listareatrabajo.component';
 
 @NgModule({
   declarations: [
@@ -73,7 +76,10 @@ import { HomeComponent } from './view/home/home.component';
     AddtrabajadorComponent,
     EdittrabajadorComponent,
     ListtrabajadorComponent,
-    HomeComponent
+    HomeComponent,
+    AddareatrabajoComponent,
+    EditareatrabajoComponent,
+    ListareatrabajoComponent
   ],
   imports: [
     BrowserModule,
