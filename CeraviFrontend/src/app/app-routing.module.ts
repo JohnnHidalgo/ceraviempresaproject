@@ -3,6 +3,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { AddarcillaComponent } from './view/arcilla/addarcilla/addarcilla.component';
 import { EditarcillaComponent } from './view/arcilla/editarcilla/editarcilla.component';
 import { ListarcillaComponent } from './view/arcilla/listarcilla/listarcilla.component';
+import { AddareatrabajoComponent } from './view/areatrabajo/addareatrabajo/addareatrabajo.component';
+import { EditareatrabajoComponent } from './view/areatrabajo/editareatrabajo/editareatrabajo.component';
+import { ListareatrabajoComponent } from './view/areatrabajo/listareatrabajo/listareatrabajo.component';
 import { AddclienteComponent } from './view/cliente/addcliente/addcliente.component';
 import { EditclienteComponent } from './view/cliente/editcliente/editcliente.component';
 import { ListclienteComponent } from './view/cliente/listcliente/listcliente.component';
@@ -35,7 +38,7 @@ const routes: Routes = [
   {path:'listcooperativa',component:ListcooperativaComponent},
   {path:'addtipotransporte',component:AddtipotransporteComponent},
   {path:'edittipotransporte',component:EdittipotransporteComponent},
-  {path:'listtipotransporte',component:ListcooperativaComponent},
+  {path:'listtipotransporte',component:ListtipotransporteComponent},
   {path:'addtransporte',component:AddtransporteComponent},
   {path:'edittransporte',component:EdittransporteComponent},
   {path:'listtransporte',component:ListtransporteComponent},
@@ -57,8 +60,10 @@ const routes: Routes = [
   {path:'addtrabajador',component:AddtrabajadorComponent},
   {path:'edittrabajador',component:EdittrabajadorComponent},
   {path:'listtrabajador',component:ListtrabajadorComponent},
-  {path:'home',component:HomeComponent}
-
+  {path:'home',component:HomeComponent},
+  {path:'addareatrabajo',component:AddareatrabajoComponent},
+  {path:'editareatrabajo',component:EditareatrabajoComponent},
+  {path:'listareatrabajo',component:ListareatrabajoComponent}
 
 ];
 
