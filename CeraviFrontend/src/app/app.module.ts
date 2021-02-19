@@ -41,6 +41,7 @@ import { EditubicacionComponent } from './view/ubicacion/editubicacion/editubica
 import { AddtrabajadorComponent } from './view/trabajador/addtrabajador/addtrabajador.component';
 import { EdittrabajadorComponent } from './view/trabajador/edittrabajador/edittrabajador.component';
 import { ListtrabajadorComponent } from './view/trabajador/listtrabajador/listtrabajador.component';
+import { HomeComponent } from './view/home/home.component';
 
 @NgModule({
   declarations: [
@@ -71,7 +72,8 @@ import { ListtrabajadorComponent } from './view/trabajador/listtrabajador/listtr
     EditubicacionComponent,
     AddtrabajadorComponent,
     EdittrabajadorComponent,
-    ListtrabajadorComponent
+    ListtrabajadorComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

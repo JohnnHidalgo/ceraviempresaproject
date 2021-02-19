@@ -9,6 +9,7 @@ import { ListclienteComponent } from './view/cliente/listcliente/listcliente.com
 import { AddcooperativaComponent } from './view/cooperativa/addcooperativa/addcooperativa.component';
 import { EditcooperativaComponent } from './view/cooperativa/editcooperativa/editcooperativa.component';
 import { ListcooperativaComponent } from './view/cooperativa/listcooperativa/listcooperativa.component';
+import { HomeComponent } from './view/home/home.component';
 import { AddhornoComponent } from './view/horno/addhorno/addhorno.component';
 import { EdithornoComponent } from './view/horno/edithorno/edithorno.component';
 import { ListhornoComponent } from './view/horno/listhorno/listhorno.component';
@@ -55,7 +56,8 @@ const routes: Routes = [
   {path:'listubicacion',component:ListubicacionComponent},
   {path:'addtrabajador',component:AddtrabajadorComponent},
   {path:'edittrabajador',component:EdittrabajadorComponent},
-  {path:'listtrabajador',component:ListtrabajadorComponent}
+  {path:'listtrabajador',component:ListtrabajadorComponent},
+  {path:'home',component:HomeComponent}
 
 
 ];
