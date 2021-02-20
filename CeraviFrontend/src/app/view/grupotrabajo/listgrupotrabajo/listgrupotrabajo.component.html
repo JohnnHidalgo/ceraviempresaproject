@@ -12,6 +12,8 @@
                         <th>ID</th>
                         <th>ÁREA DE TRABAJO</th>
                         <th>DESCRIPCION</th>
+                        <th></th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -20,6 +22,8 @@
                         <td>{{grupoTrabajo.idgrupotrabajo}}</td>
                         <td>{{grupoTrabajo.area}}</td>
                         <td>{{grupoTrabajo.descripcion}}</td>
+                        <td><button (click)="goAddGrupoTrabajo()"  class="btn btn-secondary">Ver Grupo</button></td>
+                        <td><button (click)="goAddTrabajadorGrupoTrabajo(grupoTrabajo)"  class="btn btn-secondary">Agregar Trabajador</button></td>
                         <td>
                             <button class="btn btn-secondary"><mat-icon>edit</mat-icon></button>
                             <button class="btn btn-danger"><mat-icon>delete</mat-icon></button>

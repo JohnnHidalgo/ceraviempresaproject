@@ -49,5 +49,17 @@ export class HomeComponent implements OnInit {
     this.router.navigate(["listtrabajador"])
   }
 
+  goAreaTrabajo(){
+    this.router.navigate(["listareatrabajo"])
+  }
+
+  goGrupoTrabajo(){
+    this.router.navigate(["listgrupotrabajo"])
+  }
+
+  goTrabajadorGrupoTrabajo(){
+    this.router.navigate(["addtrabajadorgrupotrabajo"])
+  }
+
 
 }

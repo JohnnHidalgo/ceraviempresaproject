@@ -24,4 +24,12 @@ export class ListgrupotrabajoComponent implements OnInit {
     this.router.navigate(["addgrupotrabajo"])
   }
 
+  goAddTrabajadorGrupoTrabajo(grupoTrabajo:GrupoTrabajoAllArea){
+    console.log(grupoTrabajo.idgrupotrabajo)
+    localStorage.setItem("idgrupotrabajo",grupoTrabajo.idgrupotrabajo.toString());
+    localStorage.setItem("areagrupotrabajo",grupoTrabajo.area.toString());
+    localStorage.setItem("descripciongrupotrabajo",grupoTrabajo.descripcion.toString());
+    this.router.navigate(["addtrabajadorgrupotrabajo"])
+  }
+
 }
