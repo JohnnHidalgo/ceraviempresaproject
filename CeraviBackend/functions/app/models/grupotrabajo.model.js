@@ -12,6 +12,15 @@ var grupotrabajoModels = {
             })
         }
     },
+    getGrupoTrabajosAllArea: (callback) => {
+        if (connection) {
+            let sql = `Select a.idgrupotrabajo, b.area, a.descripcion from grupotrabajo a, areatrabajo b where a.idareatrabajo= b.idareatrabajo and a.active=true`
+            connection.query(sql, (error, rows) => {
+                if (error) throw error
+                callback(rows)
+            })
+        }
+    },
     getOneGrupoTrabajo: (data, callback) => {
         console.log(`idgrupotrabajo : ${data}`)
         if (connection) {

@@ -21,21 +21,6 @@ export class AddtransporteComponent implements OnInit {
   tipotransporte: TipoTransporte[]=[];
   cooperativa: Cooperativa[]=[];
 
-  createCooperativa(){
-    var dd = this.transporte.tx_date.getDate();
-    var mm = this.transporte.tx_date.getMonth()+1;
-    var yyyy = this.transporte.tx_date.getFullYear();
-    var date = yyyy+"-"+mm+"-"+dd;
-    this.transporte.tx_date=date;
-
-    this.service.createTransporte(this.transporte)
-    .subscribe(data=>{
-      alert("Creación Exitosa");
-      this.router.navigate(["listtransporte"]);
-    })
-  }
-
-
   getAllTipoTransporte(){
     this.tipotransporteservice.getAllTipoTransporte()
     .subscribe(data=>{
@@ -52,7 +37,6 @@ export class AddtransporteComponent implements OnInit {
 
 
   createTransporte(){
-
     var dd = this.transporte.tx_date.getDate();
     var mm = this.transporte.tx_date.getMonth()+1;
     var yyyy = this.transporte.tx_date.getFullYear();
@@ -70,5 +54,4 @@ export class AddtransporteComponent implements OnInit {
     this.getAllCooperativa();
     this.getAllTipoTransporte();
   }
-
 }

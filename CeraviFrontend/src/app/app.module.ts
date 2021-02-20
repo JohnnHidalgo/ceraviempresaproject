@@ -45,6 +45,9 @@ import { HomeComponent } from './view/home/home.component';
 import { AddareatrabajoComponent } from './view/areatrabajo/addareatrabajo/addareatrabajo.component';
 import { EditareatrabajoComponent } from './view/areatrabajo/editareatrabajo/editareatrabajo.component';
 import { ListareatrabajoComponent } from './view/areatrabajo/listareatrabajo/listareatrabajo.component';
+import { AddgrupotrabajoComponent } from './view/grupotrabajo/addgrupotrabajo/addgrupotrabajo.component';
+import { EditgrupotrabajoComponent } from './view/grupotrabajo/editgrupotrabajo/editgrupotrabajo.component';
+import { ListgrupotrabajoComponent } from './view/grupotrabajo/listgrupotrabajo/listgrupotrabajo.component';
 
 @NgModule({
   declarations: [
@@ -79,7 +82,10 @@ import { ListareatrabajoComponent } from './view/areatrabajo/listareatrabajo/lis
     HomeComponent,
     AddareatrabajoComponent,
     EditareatrabajoComponent,
-    ListareatrabajoComponent
+    ListareatrabajoComponent,
+    AddgrupotrabajoComponent,
+    EditgrupotrabajoComponent,
+    ListgrupotrabajoComponent
   ],
   imports: [
     BrowserModule,

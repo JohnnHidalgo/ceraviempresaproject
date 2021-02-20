@@ -12,6 +12,9 @@ import { ListclienteComponent } from './view/cliente/listcliente/listcliente.com
 import { AddcooperativaComponent } from './view/cooperativa/addcooperativa/addcooperativa.component';
 import { EditcooperativaComponent } from './view/cooperativa/editcooperativa/editcooperativa.component';
 import { ListcooperativaComponent } from './view/cooperativa/listcooperativa/listcooperativa.component';
+import { AddgrupotrabajoComponent } from './view/grupotrabajo/addgrupotrabajo/addgrupotrabajo.component';
+import { EditgrupotrabajoComponent } from './view/grupotrabajo/editgrupotrabajo/editgrupotrabajo.component';
+import { ListgrupotrabajoComponent } from './view/grupotrabajo/listgrupotrabajo/listgrupotrabajo.component';
 import { HomeComponent } from './view/home/home.component';
 import { AddhornoComponent } from './view/horno/addhorno/addhorno.component';
 import { EdithornoComponent } from './view/horno/edithorno/edithorno.component';
@@ -63,7 +66,11 @@ const routes: Routes = [
   {path:'home',component:HomeComponent},
   {path:'addareatrabajo',component:AddareatrabajoComponent},
   {path:'editareatrabajo',component:EditareatrabajoComponent},
-  {path:'listareatrabajo',component:ListareatrabajoComponent}
+  {path:'listareatrabajo',component:ListareatrabajoComponent},
+
+  {path:'addgrupotrabajo',component:AddgrupotrabajoComponent},
+  {path:'editgrupotrabajo',component:EditgrupotrabajoComponent},
+  {path:'listgrupotrabajo',component:ListgrupotrabajoComponent}
 
 ];
 

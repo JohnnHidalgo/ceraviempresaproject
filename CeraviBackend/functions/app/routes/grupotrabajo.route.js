@@ -14,8 +14,9 @@ apptset.use(function(req, res, next) {
     next();
 });
 
-const { getGrupoTrabajos, getOneGrupoTrabajo, addGrupoTrabajo, editGrupoTrabajo, deleteGrupoTrabajo } = require('../controllers/grupotrabajo.controller')
+const { getGrupoTrabajos, getGrupoTrabajosAllArea, getOneGrupoTrabajo, addGrupoTrabajo, editGrupoTrabajo, deleteGrupoTrabajo } = require('../controllers/grupotrabajo.controller')
 apptset.get('/grupotrabajo/', getGrupoTrabajos);
+apptset.get('/grupotrabajo/AllArea', getGrupoTrabajosAllArea);
 apptset.get('/grupotrabajo/:idgrupotrabajo', getOneGrupoTrabajo);
 apptset.post('/grupotrabajo/', addGrupoTrabajo);
 apptset.put('/grupotrabajo/:idcooperativa', editGrupoTrabajo);
