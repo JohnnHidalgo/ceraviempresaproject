@@ -14,6 +14,13 @@ function getGrupoTrabajosAllArea(req, res, next) {
     })
 }
 
+function getGrupoTrabajosAllTrabajadores(req, res) {
+    const { idgrupotrabajo } = req.params
+    grupotrabajoModels.getGrupoTrabajosAllTrabajadores({ idgrupotrabajo }, (data, error) => {
+        res.json(data)
+    })
+}
+
 function getOneGrupoTrabajo(req, res) {
     const { idgrupotrabajo } = req.params
     grupotrabajoModels.getOneGrupoTrabajo({ idgrupotrabajo }, (data, error) => {
@@ -46,6 +53,7 @@ function deleteGrupoTrabajo(req, res) {
 module.exports = {
     getGrupoTrabajos,
     getGrupoTrabajosAllArea,
+    getGrupoTrabajosAllTrabajadores,
     getOneGrupoTrabajo,
     addGrupoTrabajo,
     editGrupoTrabajo,

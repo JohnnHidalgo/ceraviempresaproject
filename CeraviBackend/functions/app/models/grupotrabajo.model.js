@@ -21,6 +21,16 @@ var grupotrabajoModels = {
             })
         }
     },
+    getGrupoTrabajosAllTrabajadores: (data,callback) => {
+        console.log(`idgrupotrabajo : ${data}`)
+        if (connection) {
+            let sql = `select b.idtrabajador, c.nombre from grupotrabajo a, trabajadorgrupotrabajo b, trabajador c where  b.idtrabajador=c.idtrabajador and a.idgrupotrabajo = b.idgrupotrabajo and b.idgrupotrabajo=${connection.escape(data.idgrupotrabajo)};`
+            connection.query(sql, (error, rows) => {
+                if (error) throw error
+                callback(rows)
+            })
+        }
+    },
     getOneGrupoTrabajo: (data, callback) => {
         console.log(`idgrupotrabajo : ${data}`)
         if (connection) {

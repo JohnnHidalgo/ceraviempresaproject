@@ -16,16 +16,16 @@ function getOneRecepcionarcilla(req, res) {
 }
 
 function addRecepcionarcilla(req, res) {
-    const { fecha, idtransporte, idarcilla, tx_user, tx_date, active } = req.body
-    recepcionarcillaModels.addRecepcionarcilla({ fecha, idtransporte, idarcilla, tx_user, tx_date, active }, (data, error) => {
+    const { fecha, idtransporte, idarcilla, costo, tx_user, tx_date, active } = req.body
+    recepcionarcillaModels.addRecepcionarcilla({ fecha, idtransporte, idarcilla, costo, tx_user, tx_date, active }, (data, error) => {
         res.json(data)
     })
 }
 
 function editRecepcionarcilla(req, res) {
     const { idrecepcionarcilla } = req.params
-    const { fecha, idtransporte, idarcilla } = req.body
-    recepcionarcillaModels.editRecepcionarcilla({ idrecepcionarcilla, fecha, idtransporte, idarcilla }, (data, error) => {
+    const { fecha, idtransporte, idarcilla, costo } = req.body
+    recepcionarcillaModels.editRecepcionarcilla({ idrecepcionarcilla, fecha, idtransporte, idarcilla, costo }, (data, error) => {
         res.json(data)
     })
 }
