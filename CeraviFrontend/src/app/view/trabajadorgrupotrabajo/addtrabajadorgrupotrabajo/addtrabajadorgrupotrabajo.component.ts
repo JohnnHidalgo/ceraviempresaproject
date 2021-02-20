@@ -72,7 +72,7 @@ export class AddtrabajadorgrupotrabajoComponent implements OnInit {
     }
     
     alert("Creación Exitosa");
-    this.router.navigate(["salelist"]);
+    this.router.navigate(["listgrupotrabajo"]);
 
   }
 

@@ -9,3 +9,7 @@ export class GrupoTrabajoAllArea {
 export class CreateGrupoTrabajo {
     constructor(public idareatrabajo: number, public descripcion:String, public tx_user:String, public tx_date:any, public active:boolean) {}
 }
+
+export class GrupoTrabajoAllTrabajador {
+    constructor(public idtrabajador: number, public nombre: String) {}
+}

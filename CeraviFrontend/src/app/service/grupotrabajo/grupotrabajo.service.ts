@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { GrupoTrabajo, GrupoTrabajoAllArea } from 'src/app/model/grupotrabajo';
+import { GrupoTrabajo, GrupoTrabajoAllArea, GrupoTrabajoAllTrabajador } from 'src/app/model/grupotrabajo';
 
 @Injectable({
   providedIn: 'root'
@@ -19,6 +19,10 @@ export class GrupotrabajoService {
     return this.http.get<GrupoTrabajoAllArea[]>(this.mainUrl+"AllArea/");
   }
   
+  getGrupoTrabajosAllTrabajadores(idgrupotrabajo:number){  
+    return this.http.get<GrupoTrabajoAllTrabajador[]>(this.mainUrl+"Alltrabajadores/"+idgrupotrabajo);
+  }
+
   getOneGrupoTrabajo(idgrupotrabajo:number){  
     return this.http.get<any>(this.mainUrl+idgrupotrabajo);
   }
