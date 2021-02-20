@@ -28,6 +28,9 @@ import { ListtipotransporteComponent } from './view/tipotransporte/listtipotrans
 import { AddtrabajadorComponent } from './view/trabajador/addtrabajador/addtrabajador.component';
 import { EdittrabajadorComponent } from './view/trabajador/edittrabajador/edittrabajador.component';
 import { ListtrabajadorComponent } from './view/trabajador/listtrabajador/listtrabajador.component';
+import { AddtrabajadorgrupotrabajoComponent } from './view/trabajadorgrupotrabajo/addtrabajadorgrupotrabajo/addtrabajadorgrupotrabajo.component';
+import { EdittrabajadorgrupotrabajoComponent } from './view/trabajadorgrupotrabajo/edittrabajadorgrupotrabajo/edittrabajadorgrupotrabajo.component';
+import { ListtrabajadorgrupotrabajoComponent } from './view/trabajadorgrupotrabajo/listtrabajadorgrupotrabajo/listtrabajadorgrupotrabajo.component';
 import { AddtransporteComponent } from './view/transporte/addtransporte/addtransporte.component';
 import { EdittransporteComponent } from './view/transporte/edittransporte/edittransporte.component';
 import { ListtransporteComponent } from './view/transporte/listtransporte/listtransporte.component';
@@ -67,10 +70,13 @@ const routes: Routes = [
   {path:'addareatrabajo',component:AddareatrabajoComponent},
   {path:'editareatrabajo',component:EditareatrabajoComponent},
   {path:'listareatrabajo',component:ListareatrabajoComponent},
-
   {path:'addgrupotrabajo',component:AddgrupotrabajoComponent},
   {path:'editgrupotrabajo',component:EditgrupotrabajoComponent},
-  {path:'listgrupotrabajo',component:ListgrupotrabajoComponent}
+  {path:'listgrupotrabajo',component:ListgrupotrabajoComponent},
+
+  {path:'addtrabajadorgrupotrabajo',component:AddtrabajadorgrupotrabajoComponent},
+  {path:'edittrabajadorgrupotrabajo',component:EdittrabajadorgrupotrabajoComponent},
+  {path:'listtrabajadorgrupotrabajo',component:ListtrabajadorgrupotrabajoComponent}
 
 ];
 
