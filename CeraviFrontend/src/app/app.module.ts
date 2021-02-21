@@ -51,6 +51,9 @@ import { ListgrupotrabajoComponent } from './view/grupotrabajo/listgrupotrabajo/
 import { AddtrabajadorgrupotrabajoComponent } from './view/trabajadorgrupotrabajo/addtrabajadorgrupotrabajo/addtrabajadorgrupotrabajo.component';
 import { ListtrabajadorgrupotrabajoComponent } from './view/trabajadorgrupotrabajo/listtrabajadorgrupotrabajo/listtrabajadorgrupotrabajo.component';
 import { EdittrabajadorgrupotrabajoComponent } from './view/trabajadorgrupotrabajo/edittrabajadorgrupotrabajo/edittrabajadorgrupotrabajo.component';
+import { AddrecepcionarcillaComponent } from './view/recepcionarcilla/addrecepcionarcilla/addrecepcionarcilla.component';
+import { ListrecepcionarcillaComponent } from './view/recepcionarcilla/listrecepcionarcilla/listrecepcionarcilla.component';
+import { EditrecepcionarcillaComponent } from './view/recepcionarcilla/editrecepcionarcilla/editrecepcionarcilla.component';
 
 @NgModule({
   declarations: [
@@ -91,7 +94,10 @@ import { EdittrabajadorgrupotrabajoComponent } from './view/trabajadorgrupotraba
     ListgrupotrabajoComponent,
     AddtrabajadorgrupotrabajoComponent,
     ListtrabajadorgrupotrabajoComponent,
-    EdittrabajadorgrupotrabajoComponent
+    EdittrabajadorgrupotrabajoComponent,
+    AddrecepcionarcillaComponent,
+    ListrecepcionarcillaComponent,
+    EditrecepcionarcillaComponent
   ],
   imports: [
     BrowserModule,
