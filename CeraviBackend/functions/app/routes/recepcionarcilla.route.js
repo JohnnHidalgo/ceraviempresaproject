@@ -14,8 +14,9 @@ apptset.use(function(req, res, next) {
     next();
 });
 
-const { getRecepcionarcillas, getOneRecepcionarcilla, addRecepcionarcilla, editRecepcionarcilla, deleteRecepcionarcilla } = require('../controllers/recepcionarcilla.controller')
+const { getRecepcionarcillas, getRecepcionarcillasAllData, getOneRecepcionarcilla, addRecepcionarcilla, editRecepcionarcilla, deleteRecepcionarcilla } = require('../controllers/recepcionarcilla.controller')
 apptset.get('/recepcionarcilla/', getRecepcionarcillas);
+apptset.get('/recepcionarcilla/alldata/', getRecepcionarcillasAllData);
 apptset.get('/recepcionarcilla/:idrecepcionarcilla', getOneRecepcionarcilla);
 apptset.post('/recepcionarcilla/', addRecepcionarcilla);
 apptset.put('/recepcionarcilla/:idrecepcionarcilla', editRecepcionarcilla);

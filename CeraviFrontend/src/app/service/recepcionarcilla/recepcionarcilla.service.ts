@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Recepcionarcilla } from 'src/app/model/recepcionarcilla';
+import { Recepcionarcilla, RecepcionarcillaAllData } from 'src/app/model/recepcionarcilla';
 
 @Injectable({
   providedIn: 'root'
@@ -15,6 +15,10 @@ export class RecepcionarcillaService {
     return this.http.get<Recepcionarcilla[]>(this.mainUrl);
   }
   
+  getAllRecepcionarcillaAllData(){  
+    return this.http.get<RecepcionarcillaAllData[]>(this.mainUrl+"alldata/");
+  }
+
   getOneRecepcionarcilla(idrecepcionarcilla:number){  
     return this.http.get<any>(this.mainUrl+idrecepcionarcilla);
   }

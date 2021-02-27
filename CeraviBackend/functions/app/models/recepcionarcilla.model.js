@@ -12,6 +12,15 @@ var recepcionarcillaModels = {
             })
         }
     },
+    getRecepcionarcillasAllData: (callback) => {
+        if (connection) {
+            let sql = `select a.idrecepcionarcilla, a.fecha, d.nombre, b.conductor, c.origen,  a.costo from recepcionarcilla a, transporte b, arcilla c, cooperativa d where a.idtransporte = b.idtransporte and a.idarcilla = c.idarcilla and b.idcooperativa = d.idcooperativa and a.active=true`
+            connection.query(sql, (error, rows) => {
+                if (error) throw error
+                callback(rows)
+            })
+        }
+    },
     getOneRecepcionarcilla: (data, callback) => {
         console.log(`idrecepcionarcilla : ${data}`)
         if (connection) {

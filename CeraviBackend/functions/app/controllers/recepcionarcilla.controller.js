@@ -8,6 +8,12 @@ function getRecepcionarcillas(req, res, next) {
     })
 }
 
+function getRecepcionarcillasAllData(req, res, next) {
+    recepcionarcillaModels.getRecepcionarcillasAllData((data, error) => {
+        res.json(data)
+    })
+}
+
 function getOneRecepcionarcilla(req, res) {
     const { idrecepcionarcilla } = req.params
     recepcionarcillaModels.getOneRecepcionarcilla({ idrecepcionarcilla }, (data, error) => {
@@ -39,6 +45,7 @@ function deleteRecepcionarcilla(req, res) {
 
 module.exports = {
     getRecepcionarcillas,
+    getRecepcionarcillasAllData,
     getOneRecepcionarcilla,
     addRecepcionarcilla,
     editRecepcionarcilla,
