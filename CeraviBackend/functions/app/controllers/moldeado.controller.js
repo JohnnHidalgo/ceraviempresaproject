@@ -8,6 +8,12 @@ function getMoldeados(req, res, next) {
     })
 }
 
+function getMoldeadoAllData(req, res, next) {
+    moldeadoModels.getMoldeadoAllData((data, error) => {
+        res.json(data)
+    })
+}
+
 function getOneMoldeado(req, res) {
     const { idmoldeado } = req.params
     moldeadoModels.getOneMoldeado({ idmoldeado }, (data, error) => {
@@ -16,16 +22,16 @@ function getOneMoldeado(req, res) {
 }
 
 function addMoldeado(req, res) {
-    const { fecha, idtrabajadorgrupotrabajo, cantidad, idubicacion, idladrillo, tx_user, tx_date, active } = req.body
-    moldeadoModels.addMoldeado({ fecha, idtrabajadorgrupotrabajo, cantidad, idubicacion, idladrillo, tx_user, tx_date, active }, (data, error) => {
+    const { fecha, idgrupotrabajo, cantidad, idubicacion, idladrillo, tx_user, tx_date, active } = req.body
+    moldeadoModels.addMoldeado({ fecha, idgrupotrabajo, cantidad, idubicacion, idladrillo, tx_user, tx_date, active }, (data, error) => {
         res.json(data)
     })
 }
 
 function editMoldeado(req, res) {
     const { idmoldeado } = req.params
-    const { fecha, idtrabajadorgrupotrabajo, cantidad, idubicacion, idladrillo } = req.body
-    moldeadoModels.editMoldeado({ idmoldeado, fecha, idtrabajadorgrupotrabajo, cantidad, idubicacion, idladrillo }, (data, error) => {
+    const { fecha, idgrupotrabajo, cantidad, idubicacion, idladrillo } = req.body
+    moldeadoModels.editMoldeado({ idmoldeado, fecha, idgrupotrabajo, cantidad, idubicacion, idladrillo }, (data, error) => {
         res.json(data)
     })
 }
@@ -39,6 +45,7 @@ function deleteMoldeado(req, res) {
 
 module.exports = {
     getMoldeados,
+    getMoldeadoAllData,
     getOneMoldeado,
     addMoldeado,
     editMoldeado,

@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Moldeado } from 'src/app/model/moldeado';
+import { Moldeado, MoldeadoAllData } from 'src/app/model/moldeado';
 
 @Injectable({
   providedIn: 'root'
@@ -15,11 +15,11 @@ export class MoldeadoService {
     return this.http.get<Moldeado[]>(this.mainUrl);
   }
  
-  /*
+  
   getAllMoldeadoAllData(){  
-    return this.http.get<RecepcionarcillaAllData[]>(this.mainUrl+"alldata/");
+    return this.http.get<MoldeadoAllData[]>(this.mainUrl+"alldata/");
   }
-  */
+
 
   getOneMoldeado(idmoldeado:number){  
     return this.http.get<any>(this.mainUrl+idmoldeado);

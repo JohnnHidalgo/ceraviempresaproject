@@ -22,6 +22,9 @@ import { ListhornoComponent } from './view/horno/listhorno/listhorno.component';
 import { AddladrilloComponent } from './view/ladrillo/addladrillo/addladrillo.component';
 import { EditladrilloComponent } from './view/ladrillo/editladrillo/editladrillo.component';
 import { ListladrilloComponent } from './view/ladrillo/listladrillo/listladrillo.component';
+import { AddmoldeadoComponent } from './view/moldeado/addmoldeado/addmoldeado.component';
+import { EditmoldeadoComponent } from './view/moldeado/editmoldeado/editmoldeado.component';
+import { ListmoldeadoComponent } from './view/moldeado/listmoldeado/listmoldeado.component';
 import { AddrecepcionarcillaComponent } from './view/recepcionarcilla/addrecepcionarcilla/addrecepcionarcilla.component';
 import { EditrecepcionarcillaComponent } from './view/recepcionarcilla/editrecepcionarcilla/editrecepcionarcilla.component';
 import { ListrecepcionarcillaComponent } from './view/recepcionarcilla/listrecepcionarcilla/listrecepcionarcilla.component';
@@ -81,7 +84,10 @@ const routes: Routes = [
   {path:'listtrabajadorgrupotrabajo',component:ListtrabajadorgrupotrabajoComponent},
   {path:'addrecepcionarcilla',component:AddrecepcionarcillaComponent},
   {path:'editrecepcionarcilla',component:EditrecepcionarcillaComponent},
-  {path:'listrecepcionarcilla',component:ListrecepcionarcillaComponent}
+  {path:'listrecepcionarcilla',component:ListrecepcionarcillaComponent},
+  {path:'addmoldeado',component:AddmoldeadoComponent},
+  {path:'editmoldeado',component:EditmoldeadoComponent},
+  {path:'listmoldeado',component:ListmoldeadoComponent}
 
 
 ];

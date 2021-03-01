@@ -14,8 +14,9 @@ apptset.use(function(req, res, next) {
     next();
 });
 
-const { getMoldeados, getOneMoldeado, addMoldeado, editMoldeado, deleteMoldeado } = require('../controllers/moldeado.controller')
+const { getMoldeados, getMoldeadoAllData, getOneMoldeado, addMoldeado, editMoldeado, deleteMoldeado } = require('../controllers/moldeado.controller')
 apptset.get('/moldeado/', getMoldeados);
+apptset.get('/moldeado/alldata/', getMoldeadoAllData);
 apptset.get('/moldeado/:idmoldeado', getOneMoldeado);
 apptset.post('/moldeado/', addMoldeado);
 apptset.put('/moldeado/:idmoldeado', editMoldeado);
