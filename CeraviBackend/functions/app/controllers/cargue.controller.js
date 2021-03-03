@@ -8,6 +8,12 @@ function getCargues(req, res, next) {
     })
 }
 
+function getCargueAlldata(req, res, next) {
+    cargueModels.getCargueAlldata((data, error) => {
+        res.json(data)
+    })
+}
+
 function getOneCargue(req, res) {
     const { idcargue } = req.params
     cargueModels.getOneCargue({ idcargue }, (data, error) => {
@@ -16,16 +22,16 @@ function getOneCargue(req, res) {
 }
 
 function addCargue(req, res) {
-    const { fecha, idhorno, camarainicio, camarafin, idtrabajadorgrupotrabajo, idubicacion, cantidad, tx_user, tx_date, active } = req.body
-    cargueModels.addCargue({ fecha, idhorno, camarainicio, camarafin, idtrabajadorgrupotrabajo, idubicacion, cantidad, tx_user, tx_date, active }, (data, error) => {
+    const { fecha, idhorno, camarainicio, camarafin, idgrupotrabajo, idubicacion, cantidad, tx_user, tx_date, active } = req.body
+    cargueModels.addCargue({ fecha, idhorno, camarainicio, camarafin, idgrupotrabajo, idubicacion, cantidad, tx_user, tx_date, active }, (data, error) => {
         res.json(data)
     })
 }
 
 function editCargue(req, res) {
     const { idcargue } = req.params
-    const { fecha, idhorno, camarainicio, camarafin, idtrabajadorgrupotrabajo, idubicacion, cantidad } = req.body
-    cargueModels.editCargue({ idcargue, fecha, idhorno, camarainicio, camarafin, idtrabajadorgrupotrabajo, idubicacion, cantidad }, (data, error) => {
+    const { fecha, idhorno, camarainicio, camarafin, idgrupotrabajo, idubicacion, cantidad } = req.body
+    cargueModels.editCargue({ idcargue, fecha, idhorno, camarainicio, camarafin, idgrupotrabajo, idubicacion, cantidad }, (data, error) => {
         res.json(data)
     })
 }
@@ -39,6 +45,7 @@ function deleteCargue(req, res) {
 
 module.exports = {
     getCargues,
+    getCargueAlldata,
     getOneCargue,
     addCargue,
     editCargue,

@@ -81,8 +81,6 @@ export class AddmoldeadoComponent implements OnInit {
     this.moldeado.idubicacion=parseInt(idubi[0]);
     
 
-    console.log(this.moldeado)
-    
     this.moldeadoservice.createMoldeado(this.moldeado)
     .subscribe(data=>{
       alert("Creación Exitosa");

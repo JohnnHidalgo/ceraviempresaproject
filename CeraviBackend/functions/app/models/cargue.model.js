@@ -12,6 +12,15 @@ var cargueModels = {
             })
         }
     },
+    getCargueAlldata: (callback) => {
+        if (connection) {
+            let sql = `select a.idcargue, a.fecha, b.nombre, a.camarainicio, a.camarafin, c.descripcion, d.nombreplaya, a.cantidad from cargue a, horno b, grupotrabajo c, ubicacion d where a.idhorno = b.idhorno and a.idgrupotrabajo = c.idgrupotrabajo and a.idubicacion = d.idubicacion and a.active=true`
+            connection.query(sql, (error, rows) => {
+                if (error) throw error
+                callback(rows)
+            })
+        }
+    },
     getOneCargue: (data, callback) => {
         console.log(`idcargue : ${data}`)
         if (connection) {

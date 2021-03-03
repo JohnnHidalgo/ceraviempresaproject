@@ -18,7 +18,6 @@ export class ListmoldeadoComponent implements OnInit {
     this.http.getAllMoldeadoAllData()
     .subscribe(data=>{
       this.moldeado=data;
-      console.log(this.moldeado)
     });
   }
 }

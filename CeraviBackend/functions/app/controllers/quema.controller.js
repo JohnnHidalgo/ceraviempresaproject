@@ -9,30 +9,30 @@ function getQuemas(req, res, next) {
 }
 
 function getOneQuema(req, res) {
-    const { idcooperativa } = req.params
-    quemaModels.getOneQuema({ idcooperativa }, (data, error) => {
+    const { idquema } = req.params
+    quemaModels.getOneQuema({ idquema }, (data, error) => {
         res.json(data)
     })
 }
 
 function addQuema(req, res) {
-    const { nombre, tx_user, tx_date, active } = req.body
-    quemaModels.addQuema({ nombre, tx_user, tx_date, active }, (data, error) => {
+    const { fecha,idhorno,camarainicio,camarafin,idgrupotrabajo,tx_user,tx_date, active } = req.body
+    quemaModels.addQuema({ fecha,idhorno,camarainicio,camarafin,idgrupotrabajo,tx_user,tx_date, active }, (data, error) => {
         res.json(data)
     })
 }
 
 function editQuema(req, res) {
-    const { idcooperativa } = req.params
-    const { nombre } = req.body
-    quemaModels.editQuema({ idcooperativa, nombre }, (data, error) => {
+    const { idquema } = req.params
+    const { fecha,idhorno,camarainicio,camarafin,idgrupotrabajo } = req.body
+    quemaModels.editQuema({ idquema, fecha,idhorno,camarainicio,camarafin,idgrupotrabajo }, (data, error) => {
         res.json(data)
     })
 }
 
 function deleteQuema(req, res) {
-    const { idcooperativa } = req.params
-    quemaModels.deleteQuema(idcooperativa, (data, error) => {
+    const { idquema } = req.params
+    quemaModels.deleteQuema(idquema, (data, error) => {
         res.json(data)
     })
 }

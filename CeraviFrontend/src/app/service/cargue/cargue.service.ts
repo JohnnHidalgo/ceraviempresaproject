@@ -11,27 +11,27 @@ export class CargueService {
   
   mainUrl='https://us-central1-ceraviproject.cloudfunctions.net/ceravibackendservice/cargue/';
   
-  getAllMoldeado(){  
+  getAllCargue(){  
     return this.http.get<Cargue[]>(this.mainUrl);
   }
  
-  getAllMoldeadoAllData(){  
+  getAllCargueAllData(){  
     return this.http.get<CargueAllData[]>(this.mainUrl+"alldata/");
   }
 
-  getOneMoldeado(idcargue:number){  
+  getOneCargue(idcargue:number){  
     return this.http.get<any>(this.mainUrl+idcargue);
   }
 
-  createMoldeado(cargue:any){
+  createCargue(cargue:any){
     return this.http.post<any>(this.mainUrl,cargue);
   }
   
-  updateMoldeado(cargue:Cargue){
+  updateCargue(cargue:Cargue){
     return this.http.put<Cargue>(this.mainUrl+cargue.idcargue,cargue);
   }
 
-  deleteMoldeado(cargue:Cargue){
+  deleteCargue(cargue:Cargue){
     return this.http.put<Cargue>(this.mainUrl+"delete/"+cargue.idcargue,cargue);
   }
 }

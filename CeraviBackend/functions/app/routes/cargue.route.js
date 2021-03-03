@@ -14,8 +14,9 @@ apptset.use(function(req, res, next) {
     next();
 });
 
-const { getCargues, getOneCargue, addCargue, editCargue, deleteCargue } = require('../controllers/cargue.controller')
+const { getCargues, getCargueAlldata, getOneCargue, addCargue, editCargue, deleteCargue } = require('../controllers/cargue.controller')
 apptset.get('/cargue/', getCargues);
+apptset.get('/cargue/alldata/', getCargueAlldata);
 apptset.get('/cargue/:idcargue', getOneCargue);
 apptset.post('/cargue/', addCargue);
 apptset.put('/cargue/:idcargue', editCargue);

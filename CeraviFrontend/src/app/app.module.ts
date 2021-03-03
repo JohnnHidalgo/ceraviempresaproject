@@ -57,6 +57,9 @@ import { EditrecepcionarcillaComponent } from './view/recepcionarcilla/editrecep
 import { AddmoldeadoComponent } from './view/moldeado/addmoldeado/addmoldeado.component';
 import { ListmoldeadoComponent } from './view/moldeado/listmoldeado/listmoldeado.component';
 import { EditmoldeadoComponent } from './view/moldeado/editmoldeado/editmoldeado.component';
+import { AddcargueComponent } from './view/cargue/addcargue/addcargue.component';
+import { ListcargueComponent } from './view/cargue/listcargue/listcargue.component';
+import { EditcargueComponent } from './view/cargue/editcargue/editcargue.component';
 
 @NgModule({
   declarations: [
@@ -103,7 +106,10 @@ import { EditmoldeadoComponent } from './view/moldeado/editmoldeado/editmoldeado
     EditrecepcionarcillaComponent,
     AddmoldeadoComponent,
     ListmoldeadoComponent,
-    EditmoldeadoComponent
+    EditmoldeadoComponent,
+    AddcargueComponent,
+    ListcargueComponent,
+    EditcargueComponent
   ],
   imports: [
     BrowserModule,

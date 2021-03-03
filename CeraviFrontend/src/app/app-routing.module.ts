@@ -6,6 +6,9 @@ import { ListarcillaComponent } from './view/arcilla/listarcilla/listarcilla.com
 import { AddareatrabajoComponent } from './view/areatrabajo/addareatrabajo/addareatrabajo.component';
 import { EditareatrabajoComponent } from './view/areatrabajo/editareatrabajo/editareatrabajo.component';
 import { ListareatrabajoComponent } from './view/areatrabajo/listareatrabajo/listareatrabajo.component';
+import { AddcargueComponent } from './view/cargue/addcargue/addcargue.component';
+import { EditcargueComponent } from './view/cargue/editcargue/editcargue.component';
+import { ListcargueComponent } from './view/cargue/listcargue/listcargue.component';
 import { AddclienteComponent } from './view/cliente/addcliente/addcliente.component';
 import { EditclienteComponent } from './view/cliente/editcliente/editcliente.component';
 import { ListclienteComponent } from './view/cliente/listcliente/listcliente.component';
@@ -87,7 +90,10 @@ const routes: Routes = [
   {path:'listrecepcionarcilla',component:ListrecepcionarcillaComponent},
   {path:'addmoldeado',component:AddmoldeadoComponent},
   {path:'editmoldeado',component:EditmoldeadoComponent},
-  {path:'listmoldeado',component:ListmoldeadoComponent}
+  {path:'listmoldeado',component:ListmoldeadoComponent},
+  {path:'addcargue',component:AddcargueComponent},
+  {path:'editcargue',component:EditcargueComponent},
+  {path:'listcargue',component:ListcargueComponent}
 
 
 ];
