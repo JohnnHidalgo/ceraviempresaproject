@@ -63,6 +63,9 @@ import { EditcargueComponent } from './view/cargue/editcargue/editcargue.compone
 import { AddquemaComponent } from './view/quema/addquema/addquema.component';
 import { EditquemaComponent } from './view/quema/editquema/editquema.component';
 import { ListquemaComponent } from './view/quema/listquema/listquema.component';
+import { AddquemacontrolComponent } from './view/quemacontrol/addquemacontrol/addquemacontrol.component';
+import { EditquemacontrolComponent } from './view/quemacontrol/editquemacontrol/editquemacontrol.component';
+import { ListquemacontrolComponent } from './view/quemacontrol/listquemacontrol/listquemacontrol.component';
 
 @NgModule({
   declarations: [
@@ -115,7 +118,10 @@ import { ListquemaComponent } from './view/quema/listquema/listquema.component';
     EditcargueComponent,
     AddquemaComponent,
     EditquemaComponent,
-    ListquemaComponent
+    ListquemaComponent,
+    AddquemacontrolComponent,
+    EditquemacontrolComponent,
+    ListquemacontrolComponent
   ],
   imports: [
     BrowserModule,
