@@ -3,7 +3,7 @@ export class Quema {
 }
 
 export class QuemaAllData {
-    constructor(public idquema: number, public fecha: any, public cantidad: number, public descripcion: String, public nombreplaya: String, public tipo: String) {}
+    constructor(public idquema: number, public fecha: any, public nombre: String, public camarainicio: String, public camarafin: String, public descripcion: String) {}
 }
 
 export class CreateQuema {

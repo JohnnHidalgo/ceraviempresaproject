@@ -28,6 +28,9 @@ import { ListladrilloComponent } from './view/ladrillo/listladrillo/listladrillo
 import { AddmoldeadoComponent } from './view/moldeado/addmoldeado/addmoldeado.component';
 import { EditmoldeadoComponent } from './view/moldeado/editmoldeado/editmoldeado.component';
 import { ListmoldeadoComponent } from './view/moldeado/listmoldeado/listmoldeado.component';
+import { AddquemaComponent } from './view/quema/addquema/addquema.component';
+import { EditquemaComponent } from './view/quema/editquema/editquema.component';
+import { ListquemaComponent } from './view/quema/listquema/listquema.component';
 import { AddrecepcionarcillaComponent } from './view/recepcionarcilla/addrecepcionarcilla/addrecepcionarcilla.component';
 import { EditrecepcionarcillaComponent } from './view/recepcionarcilla/editrecepcionarcilla/editrecepcionarcilla.component';
 import { ListrecepcionarcillaComponent } from './view/recepcionarcilla/listrecepcionarcilla/listrecepcionarcilla.component';
@@ -93,7 +96,10 @@ const routes: Routes = [
   {path:'listmoldeado',component:ListmoldeadoComponent},
   {path:'addcargue',component:AddcargueComponent},
   {path:'editcargue',component:EditcargueComponent},
-  {path:'listcargue',component:ListcargueComponent}
+  {path:'listcargue',component:ListcargueComponent},
+  {path:'addquema',component:AddquemaComponent},
+  {path:'editquema',component:EditquemaComponent},
+  {path:'listquema',component:ListquemaComponent}
 
 
 ];

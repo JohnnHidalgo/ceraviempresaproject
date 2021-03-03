@@ -8,6 +8,12 @@ function getQuemas(req, res, next) {
     })
 }
 
+function getQuemaAllData(req, res, next) {
+    quemaModels.getQuemaAllData((data, error) => {
+        res.json(data)
+    })
+}
+
 function getOneQuema(req, res) {
     const { idquema } = req.params
     quemaModels.getOneQuema({ idquema }, (data, error) => {
@@ -39,6 +45,7 @@ function deleteQuema(req, res) {
 
 module.exports = {
     getQuemas,
+    getQuemaAllData,
     getOneQuema,
     addQuema,
     editQuema,

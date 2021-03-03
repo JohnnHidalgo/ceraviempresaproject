@@ -1,0 +1,36 @@
+<div class="container col-md-10">
+    <div class="card">
+        <div class="card-header">
+            <h3>Registro Quema</h3>
+        </div>
+        <div class="card-body" style=" height:800px; overflow:auto;">
+            <table class="table table-hover" cellspacing="0" cellpadding="1">
+                <thead>
+                    <tr class="text-center">
+                        <th>ID</th>
+                        <th>FECHA</th>
+                        <th>NOMBRE</th>
+                        <th>CAMARA INICIO</th>
+                        <th>CAMARA FIN</th>
+                        <th>DESCRIPCION</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <td></td>
+                    <tr *ngFor="let quema of quema" class="text-center">
+                        <td>{{quema.idquema}}</td>
+                        <td>{{quema.fecha}}</td>
+                        <td>{{quema.nombre}}</td>
+                        <td>{{quema.camarainicio}}</td>
+                        <td>{{quema.camarafin}}</td>
+                        <td>{{quema.descripcion}}</td>
+                        <td>
+                            <button class="btn btn-secondary"><mat-icon>edit</mat-icon></button>
+                            <button class="btn btn-danger"><mat-icon>delete</mat-icon></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

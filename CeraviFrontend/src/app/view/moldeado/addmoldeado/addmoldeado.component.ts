@@ -86,8 +86,6 @@ export class AddmoldeadoComponent implements OnInit {
       alert("Creación Exitosa");
       this.router.navigate(["listmoldeado"]);
     });
-    
-
-    
   }
+  
 }

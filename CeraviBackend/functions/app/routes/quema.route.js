@@ -14,8 +14,9 @@ apptset.use(function(req, res, next) {
     next();
 });
 
-const { getQuemas, getOneQuema, addQuema, editQuema, deleteQuema } = require('../controllers/quema.controller')
+const { getQuemas, getQuemaAllData, getOneQuema, addQuema, editQuema, deleteQuema } = require('../controllers/quema.controller')
 apptset.get('/quema/', getQuemas);
+apptset.get('/quema/alldata', getQuemaAllData);
 apptset.get('/quema/:idquema', getOneQuema);
 apptset.post('/quema/', addQuema);
 apptset.put('/quema/:idquema', editQuema);

@@ -12,6 +12,17 @@ var quemaModels = {
             })
         }
     },
+
+    getQuemaAllData: (callback) => {
+        if (connection) {
+            let sql = `select a.idquema, a.fecha, b.nombre, a.camarainicio, a.camarafin, c.descripcion from quema a, horno b, grupotrabajo c where a.idhorno = b.idhorno and a.idgrupotrabajo = c.idgrupotrabajo and a.active=true`
+            connection.query(sql, (error, rows) => {
+                if (error) throw error
+                callback(rows)
+            })
+        }
+    },
+
     getOneQuema: (data, callback) => {
         console.log(`idquema : ${data}`)
         if (connection) {

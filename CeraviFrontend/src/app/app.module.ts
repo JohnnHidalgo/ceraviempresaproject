@@ -60,6 +60,9 @@ import { EditmoldeadoComponent } from './view/moldeado/editmoldeado/editmoldeado
 import { AddcargueComponent } from './view/cargue/addcargue/addcargue.component';
 import { ListcargueComponent } from './view/cargue/listcargue/listcargue.component';
 import { EditcargueComponent } from './view/cargue/editcargue/editcargue.component';
+import { AddquemaComponent } from './view/quema/addquema/addquema.component';
+import { EditquemaComponent } from './view/quema/editquema/editquema.component';
+import { ListquemaComponent } from './view/quema/listquema/listquema.component';
 
 @NgModule({
   declarations: [
@@ -109,7 +112,10 @@ import { EditcargueComponent } from './view/cargue/editcargue/editcargue.compone
     EditmoldeadoComponent,
     AddcargueComponent,
     ListcargueComponent,
-    EditcargueComponent
+    EditcargueComponent,
+    AddquemaComponent,
+    EditquemaComponent,
+    ListquemaComponent
   ],
   imports: [
     BrowserModule,
