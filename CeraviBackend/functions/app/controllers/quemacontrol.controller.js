@@ -1,29 +1,30 @@
 'use strict'
 
-const quemaModels = require('../models/quemacontrol.model')
+const quemacontrolModels = require('../models/quemacontrol.model')
 
 function getControlQuemas(req, res, next) {
-    quemaModels.getQuemaControl((data, error) => {
+    quemacontrolModels.getQuemaControl((data, error) => {
         res.json(data)
     })
 }
 
-function getControlQuemaAllData(req, res, next) {
-    quemaModels.getQuemaControlAllData((data, error) => {
+function getQuemaControlAllData(req, res, next) {
+    quemacontrolModels.getQuemaControlAllData((data, error) => {
         res.json(data)
+        console.log(`testes : ${data}`)
     })
 }
 
 function getOneControlQuema(req, res) {
     const { idcontrolquema } = req.params
-    quemaModels.getOneQuemaControl({ idcontrolquema }, (data, error) => {
+    quemacontrolModels.getOneQuemaControl({ idcontrolquema }, (data, error) => {
         res.json(data)
     })
 }
 
 function addControlQuema(req, res) {
     const { fechainicio,fechafin,valorgas,tx_user,tx_date, active } = req.body
-    quemaModels.addQuemaControl({ fechainicio,fechafin,valorgas,tx_user,tx_date, active }, (data, error) => {
+    quemacontrolModels.addQuemaControl({ fechainicio,fechafin,valorgas,tx_user,tx_date, active }, (data, error) => {
         res.json(data)
     })
 }
@@ -31,21 +32,21 @@ function addControlQuema(req, res) {
 function editControlQuema(req, res) {
     const { idcontrolquema } = req.params
     const { fechainicio,fechafin,valorgas,tx_user,tx_date, active } = req.body
-    quemaModels.editQuema({ idcontrolquema,fechainicio,fechafin,valorgas,tx_user,tx_date, active }, (data, error) => {
+    quemacontrolModels.editQuema({ idcontrolquema,fechainicio,fechafin,valorgas,tx_user,tx_date, active }, (data, error) => {
         res.json(data)
     })
 }
 
 function deleteControlQuema(req, res) {
     const { idcontrolquema } = req.params
-    quemaModels.deleteQuema(idcontrolquema, (data, error) => {
+    quemacontrolModels.deleteQuema(idcontrolquema, (data, error) => {
         res.json(data)
     })
 }
 
 module.exports = {
     getControlQuemas,
-    getControlQuemaAllData,
+    getQuemaControlAllData,
     getOneControlQuema,
     addControlQuema,
     editControlQuema,

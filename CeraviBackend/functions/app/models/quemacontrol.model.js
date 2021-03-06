@@ -14,6 +14,7 @@ var quemacontrolModels = {
     },
 
     getQuemaControlAllData: (callback) => {
+        console.log(`getQuemaControlAllDataaaaaaaaaaaaaaaaaaaa : `)
         if (connection) {
             let sql = `select a.idcontrolquema, a.fechainicio, a.fechafin, a.valorgas, b.nombre from controlquema a, horno b where a.idhorno = b.idhorno and a.active = true`
             connection.query(sql, (error, rows) => {

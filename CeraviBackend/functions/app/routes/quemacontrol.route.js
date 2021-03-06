@@ -14,9 +14,9 @@ apptset.use(function(req, res, next) {
     next();
 });
 
-const { getControlQuemas, getControlQuemaAllData, getOneControlQuema, addControlQuema, editControlQuema, deleteControlQuema } = require('../controllers/quemacontrol.controller')
+const { getControlQuemas, getQuemaControlAllData, getOneControlQuema, addControlQuema, editControlQuema, deleteControlQuema } = require('../controllers/quemacontrol.controller')
 apptset.get('/controlquema/', getControlQuemas);
-apptset.get('/controlquema/alldata', getControlQuemaAllData);
+apptset.get('/controlquema/alldata/data', getQuemaControlAllData);
 apptset.get('/controlquema/:idcontrolquema', getOneControlQuema);
 apptset.post('/controlquema/', addControlQuema);
 apptset.put('/controlquema/:idcontrolquema', editControlQuema);

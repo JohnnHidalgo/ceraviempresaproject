@@ -3,7 +3,7 @@ export class QuemaControl {
 }
 
 export class QuemaControlAllData {
-    constructor(public idmoldeado: number, public fecha: any, public cantidad: number, public descripcion: String, public nombreplaya: String, public tipo: String) {}
+    constructor(public idcontrolquema: number, public fechainicio: any, public fechafin: any, public valorgas: number, public nombre: String) {}
 }
 
 export class CreateQuemaControl {

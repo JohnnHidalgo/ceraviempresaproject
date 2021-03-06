@@ -15,7 +15,7 @@ export class QuemacontrolService {
   }
  
   getAllControlQuemaAllData(){  
-    return this.http.get<QuemaControlAllData[]>(this.mainUrl+"alldata/");
+    return this.http.get<QuemaControlAllData[]>(this.mainUrl+"alldata/data");
   }
 
   getOneControlQuema(idcontrolquema:number){  
