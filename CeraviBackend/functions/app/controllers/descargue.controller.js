@@ -8,6 +8,12 @@ function getDescargues(req, res, next) {
     })
 }
 
+function getDescargueAllData(req, res, next) {
+    descargueModels.getDescargueAllData((data, error) => {
+        res.json(data)
+    })
+}
+
 function getOneDescargue(req, res) {
     const { iddescargue } = req.params
     descargueModels.getOneDescargue({ iddescargue }, (data, error) => {
@@ -39,6 +45,7 @@ function deleteDescargue(req, res) {
 
 module.exports = {
     getDescargues,
+    getDescargueAllData,
     getOneDescargue,
     addDescargue,
     editDescargue,

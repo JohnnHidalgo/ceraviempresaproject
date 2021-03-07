@@ -14,8 +14,9 @@ apptset.use(function(req, res, next) {
     next();
 });
 
-const { getDescargues, getOneDescargue, addDescargue, editDescargue, deleteDescargue } = require('../controllers/descargue.controller')
+const { getDescargues, getDescargueAllData, getOneDescargue, addDescargue, editDescargue, deleteDescargue } = require('../controllers/descargue.controller')
 apptset.get('/descargue/', getDescargues);
+apptset.get('/descargue/alldata', getDescargueAllData);
 apptset.get('/descargue/:iddescargue', getOneDescargue);
 apptset.post('/descargue/', addDescargue);
 apptset.put('/descargue/:iddescargue', editDescargue);

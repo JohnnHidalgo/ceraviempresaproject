@@ -16,16 +16,16 @@ function getOneCliente(req, res) {
 }
 
 function addCliente(req, res) {
-    const { nombre, departamento, ubicacion, celular, nit, tx_user, tx_date, active } = req.body
-    clienteModels.addCliente({ nombre, departamento, ubicacion, celular, nit, tx_user, tx_date, active }, (data, error) => {
+    const { nombrecompleto, departamento, ubicacion, celular, nit, tx_user, tx_date, active } = req.body
+    clienteModels.addCliente({ nombrecompleto, departamento, ubicacion, celular, nit, tx_user, tx_date, active }, (data, error) => {
         res.json(data)
     })
 }
 
 function editCliente(req, res) {
     const { idcliente } = req.params
-    const { nombre, departamento, ubicacion, celular, nit } = req.body
-    clienteModels.editCliente({ idcliente, nombre, departamento, ubicacion, celular, nit }, (data, error) => {
+    const { nombrecompleto, departamento, ubicacion, celular, nit } = req.body
+    clienteModels.editCliente({ idcliente, nombrecompleto, departamento, ubicacion, celular, nit }, (data, error) => {
         res.json(data)
     })
 }

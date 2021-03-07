@@ -12,6 +12,15 @@ var descargueModels = {
             })
         }
     },
+    getDescargueAllData: (callback) => {
+        if (connection) {
+            let sql = `select a.iddescargue, a.fecha, b.nombre, a.camarainicio, a.camarafin, c.descripcion, d.nombrecompleto, d.departamento, e.tipo, f.conductor, f.placa from descargue a, horno b, grupotrabajo c, cliente d, ladrillo e, transporte f where a.idhorno = b.idhorno and a.idgrupotrabajo = c.idgrupotrabajo and a.idcliente = d.idcliente and a.idtransporte = f.idtransporte and a.active =true`
+            connection.query(sql, (error, rows) => {
+                if (error) throw error
+                callback(rows)
+            })
+        }
+    },
     getOneDescargue: (data, callback) => {
         console.log(`iddescargue : ${data}`)
         if (connection) {
@@ -22,9 +31,11 @@ var descargueModels = {
             })
         }
     },
+    
     addDescargue: (data, callback) => {
         if (connection) {
             let sql = `insert into descargue(fecha,idhorno,camarainicio,camarafin,idgrupotrabajo,idcliente,idladrillo,idtransporte,cantidad,tx_user,tx_date, active) values (${connection.escape(data.fecha)},${connection.escape(data.idhorno)},${connection.escape(data.camarainicio)},${connection.escape(data.camarafin)},${connection.escape(data.idgrupotrabajo)},${connection.escape(data.idcliente)},${connection.escape(data.idladrillo)}, ${connection.escape(data.idtransporte)},${connection.escape(data.cantidad)},${connection.escape(data.tx_user)}, ${connection.escape(data.tx_date)}, ${connection.escape(data.active)})`
+            console.log(sql)
             connection.query(sql, (error, rows) => {
                 if (error) throw error
                 callback({ message: 'cargue insertado' })

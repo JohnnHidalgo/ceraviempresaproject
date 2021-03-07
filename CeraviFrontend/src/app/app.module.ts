@@ -66,6 +66,9 @@ import { ListquemaComponent } from './view/quema/listquema/listquema.component';
 import { AddquemacontrolComponent } from './view/quemacontrol/addquemacontrol/addquemacontrol.component';
 import { EditquemacontrolComponent } from './view/quemacontrol/editquemacontrol/editquemacontrol.component';
 import { ListquemacontrolComponent } from './view/quemacontrol/listquemacontrol/listquemacontrol.component';
+import { AdddescargueComponent } from './view/descargue/adddescargue/adddescargue.component';
+import { EditdescargueComponent } from './view/descargue/editdescargue/editdescargue.component';
+import { ListdescargueComponent } from './view/descargue/listdescargue/listdescargue.component';
 
 @NgModule({
   declarations: [
@@ -121,7 +124,10 @@ import { ListquemacontrolComponent } from './view/quemacontrol/listquemacontrol/
     ListquemaComponent,
     AddquemacontrolComponent,
     EditquemacontrolComponent,
-    ListquemacontrolComponent
+    ListquemacontrolComponent,
+    AdddescargueComponent,
+    EditdescargueComponent,
+    ListdescargueComponent
   ],
   imports: [
     BrowserModule,

@@ -15,6 +15,9 @@ import { ListclienteComponent } from './view/cliente/listcliente/listcliente.com
 import { AddcooperativaComponent } from './view/cooperativa/addcooperativa/addcooperativa.component';
 import { EditcooperativaComponent } from './view/cooperativa/editcooperativa/editcooperativa.component';
 import { ListcooperativaComponent } from './view/cooperativa/listcooperativa/listcooperativa.component';
+import { AdddescargueComponent } from './view/descargue/adddescargue/adddescargue.component';
+import { EditdescargueComponent } from './view/descargue/editdescargue/editdescargue.component';
+import { ListdescargueComponent } from './view/descargue/listdescargue/listdescargue.component';
 import { AddgrupotrabajoComponent } from './view/grupotrabajo/addgrupotrabajo/addgrupotrabajo.component';
 import { EditgrupotrabajoComponent } from './view/grupotrabajo/editgrupotrabajo/editgrupotrabajo.component';
 import { ListgrupotrabajoComponent } from './view/grupotrabajo/listgrupotrabajo/listgrupotrabajo.component';
@@ -105,7 +108,10 @@ const routes: Routes = [
   {path:'listquema',component:ListquemaComponent},
   {path:'addcontrolquema',component:AddquemacontrolComponent},
   {path:'editcontrolquema',component:EditquemacontrolComponent},
-  {path:'listcontrolquema',component:ListquemacontrolComponent}
+  {path:'listcontrolquema',component:ListquemacontrolComponent},
+  {path:'adddescargue',component:AdddescargueComponent},
+  {path:'editdescargue',component:EditdescargueComponent},
+  {path:'listdescargue',component:ListdescargueComponent}
 
 
 ];

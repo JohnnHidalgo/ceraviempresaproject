@@ -1,0 +1,71 @@
+<div class="container col-md-10">
+    <div class="card">
+        <div class="card-header">
+            <h3>Registrar Venta</h3>
+        </div>
+        <div class="card-body"style=" height:800px; overflow:auto;">
+            <form action="">
+
+                <div class="form-group">
+                    <label for="">Fecha:</label>
+                    <input [matDatepicker]="basicDatepicker" [(ngModel)]="descargue.fecha" name="fecha" class="form-control">
+                    <mat-datepicker-toggle [for]="basicDatepicker"></mat-datepicker-toggle>
+                    <mat-datepicker #basicDatepicker></mat-datepicker>
+                </div>
+                
+                <div class="form-group">
+                    <label for="">Grupo de Trabajo:</label>
+                    <select [(ngModel)]="descargue.idgrupotrabajo" name="idgrupotrabajo" class="form-control">
+                        <option *ngFor="let grupotrabajo of grupotrabajo" >{{grupotrabajo.idgrupotrabajo}} - {{grupotrabajo.area}} - {{grupotrabajo.descripcion}}</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="">Horno:</label>
+                    <select [(ngModel)]="descargue.idhorno" name="idhorno" class="form-control">
+                        <option *ngFor="let horno of horno" >{{horno.idhorno}} - {{horno.nombre}}</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="">Camara Inicio:</label>
+                    <input [(ngModel)]="descargue.camarainicio" name="camarainicio" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="">Camara Fin:</label>
+                    <input [(ngModel)]="descargue.camarafin" name="camarafin" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="">Cliente:</label>
+                    <select [(ngModel)]="descargue.idcliente" name="idcliente" class="form-control">
+                        <option *ngFor="let cliente of cliente" >{{cliente.idcliente}} - {{cliente.nombrecompleto}}</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="">Tipo de Ladrillo:</label>
+                    <select [(ngModel)]="descargue.idladrillo" name="idladrillo"class="form-control">
+                        <option *ngFor="let ladrillo of ladrillo" >{{ladrillo.idladrillo}} - {{ladrillo.tipo}}</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="">Transporte:</label>
+                    <select [(ngModel)]="descargue.idtransporte" name="idtransporte" class="form-control">
+                        <option *ngFor="let transporte of transporte" >{{transporte.idtransporte}} - {{transporte.conductor}} - {{transporte.placa}}</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="">Cantidad:</label>
+                    <input [(ngModel)]="descargue.cantidad" name="cantidad" class="form-control">
+                </div>
+
+
+                <button (click)="createDescargue()" class="btn btn-danger">Agregar</button>
+            </form>
+        </div>        
+    </div>
+</div>
