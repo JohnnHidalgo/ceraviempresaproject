@@ -28,6 +28,7 @@ apinode.use(require('./app/routes/quema.route'))
 apinode.use(require('./app/routes/controlquema.route'))
 apinode.use(require('./app/routes/descargue.route'))
 apinode.use(require('./app/routes/quemacontrol.route'))
+apinode.use(require('./app/routes/tipodepago.route'))
 
 apinode.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
