@@ -21,4 +21,9 @@ export class ListrecepcionarcillaComponent implements OnInit {
     });
   }
 
+  goAddRecepcionArcilla(){
+    this.router.navigate(["addrecepcionarcilla"])
+  }
+
+
 }

@@ -20,4 +20,9 @@ export class ListmoldeadoComponent implements OnInit {
       this.moldeado=data;
     });
   }
+
+  goAddMoldeado(){
+    this.router.navigate(["addmoldeado"])
+  }
+
 }

@@ -21,10 +21,8 @@ export class ListcargueComponent implements OnInit {
     });
   }
 
+  goAdCargue(){
+    this.router.navigate(["addcargue"])
+  }
+
 }
-
-
-/*
-Agregar correcciones, temario, etc
-Correcciones para este jueves
-*/

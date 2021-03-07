@@ -21,4 +21,10 @@ export class ListtrabajadorgrupotrabajoComponent implements OnInit {
     });
   }
 
+
+  goAddTrabajadorGrupoTrabajo(){
+    this.router.navigate(["addtrabajadorgrupotrabajo"])
+  }
+
+
 }

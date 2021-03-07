@@ -20,4 +20,8 @@ export class ListdescargueComponent implements OnInit {
       this.descargue=data;
     });
   }
+
+  goAdDescargue(){
+    this.router.navigate(["adddescargue"])
+  }
 }

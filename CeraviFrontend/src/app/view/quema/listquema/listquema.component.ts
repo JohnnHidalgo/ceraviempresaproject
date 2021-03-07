@@ -21,4 +21,9 @@ export class ListquemaComponent implements OnInit {
     });
   }
 
+  goAddQuema(){
+    this.router.navigate(["addquema"])
+  }
+
+
 }

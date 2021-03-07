@@ -21,5 +21,8 @@ export class ListquemacontrolComponent implements OnInit {
       this.quemacontrol=data;
     });
   }
+  goAddControlQuema(){
+    this.router.navigate(["addcontrolquema"])
+  }
 
 }
