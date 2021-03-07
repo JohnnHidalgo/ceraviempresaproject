@@ -60,6 +60,8 @@ export class HomeComponent implements OnInit {
   goTrabajadorGrupoTrabajo(){
     this.router.navigate(["addtrabajadorgrupotrabajo"])
   }
-
+  goRecepionArcilla(){
+    this.router.navigate(["listrecepcionarcilla"])
+  }
 
 }
