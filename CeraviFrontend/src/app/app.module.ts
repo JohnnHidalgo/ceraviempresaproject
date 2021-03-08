@@ -69,6 +69,9 @@ import { ListquemacontrolComponent } from './view/quemacontrol/listquemacontrol/
 import { AdddescargueComponent } from './view/descargue/adddescargue/adddescargue.component';
 import { EditdescargueComponent } from './view/descargue/editdescargue/editdescargue.component';
 import { ListdescargueComponent } from './view/descargue/listdescargue/listdescargue.component';
+import { AddtipodepagoComponent } from './view/tipodepago/addtipodepago/addtipodepago.component';
+import { EdittipodepagoComponent } from './view/tipodepago/edittipodepago/edittipodepago.component';
+import { ListtipodepagoComponent } from './view/tipodepago/listtipodepago/listtipodepago.component';
 
 @NgModule({
   declarations: [
@@ -127,7 +130,10 @@ import { ListdescargueComponent } from './view/descargue/listdescargue/listdesca
     ListquemacontrolComponent,
     AdddescargueComponent,
     EditdescargueComponent,
-    ListdescargueComponent
+    ListdescargueComponent,
+    AddtipodepagoComponent,
+    EdittipodepagoComponent,
+    ListtipodepagoComponent
   ],
   imports: [
     BrowserModule,

@@ -40,6 +40,9 @@ import { ListquemacontrolComponent } from './view/quemacontrol/listquemacontrol/
 import { AddrecepcionarcillaComponent } from './view/recepcionarcilla/addrecepcionarcilla/addrecepcionarcilla.component';
 import { EditrecepcionarcillaComponent } from './view/recepcionarcilla/editrecepcionarcilla/editrecepcionarcilla.component';
 import { ListrecepcionarcillaComponent } from './view/recepcionarcilla/listrecepcionarcilla/listrecepcionarcilla.component';
+import { AddtipodepagoComponent } from './view/tipodepago/addtipodepago/addtipodepago.component';
+import { EdittipodepagoComponent } from './view/tipodepago/edittipodepago/edittipodepago.component';
+import { ListtipodepagoComponent } from './view/tipodepago/listtipodepago/listtipodepago.component';
 import { AddtipotransporteComponent } from './view/tipotransporte/addtipotransporte/addtipotransporte.component';
 import { EdittipotransporteComponent } from './view/tipotransporte/edittipotransporte/edittipotransporte.component';
 import { ListtipotransporteComponent } from './view/tipotransporte/listtipotransporte/listtipotransporte.component';
@@ -111,7 +114,11 @@ const routes: Routes = [
   {path:'listcontrolquema',component:ListquemacontrolComponent},
   {path:'adddescargue',component:AdddescargueComponent},
   {path:'editdescargue',component:EditdescargueComponent},
-  {path:'listdescargue',component:ListdescargueComponent}
+  {path:'listdescargue',component:ListdescargueComponent},
+  {path:'addtipodepago',component:AddtipodepagoComponent},
+  {path:'edittipodepago',component:EdittipodepagoComponent},
+  {path:'listtipodepago',component:ListtipodepagoComponent}
+
 
 
 ];
